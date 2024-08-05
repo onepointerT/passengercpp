@@ -64,7 +64,7 @@ public:
     }
 
     bool absolve( const GraphPassengerT& passenger ) {
-        if ( Edge< GraphPassengerT, ActionT< GraphPassengerT > >::absolve( passenger ) ) {
+        if ( Edge< GraphPassengerT, ActionT >::absolve( passenger ) ) {
             return this->arriveAtNode( passenger );
         }
         return false;

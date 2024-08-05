@@ -25,7 +25,7 @@ class NumberEnumeration
     :   protected std::vector< Range< num > > 
 {
 protected:
-    typedef typename std::vector< Range< num > > vector_t;
+    typedef std::vector< Range< num > > vector_t;
 
 public:
     typedef typename std::vector< Range< num > >::const_iterator iterator;
@@ -35,7 +35,7 @@ public:
     {}
 
     void add_range( const Range< num > rng ) {
-        this->push_back( rng )
+        this->push_back( rng );
     }
 
     void add_range( const num from, const num to ) {
@@ -67,8 +67,8 @@ public:
 template< typename num = int >
 class PassengerNumber {
 public:
-    typedef typename NumberEnumeration< num > numberenumeration_t;
-    typedef typedef Range< num > member_t;
+    typedef NumberEnumeration< num > numberenumeration_t;
+    typedef Range< num > member_t;
 
 protected:
     NumberEnumeration< num > m_members;
@@ -143,14 +143,14 @@ public:
     {}
 
     bool arrive( const GraphPassengerT& passenger ) {
-        for ( std::queue< GraphPassengerT& >::const_iterator it = m_arrivals.front()
-            ; it =< m_arrivals.back(); ++it
+        for ( typename std::queue< GraphPassengerT& >::const_iterator it = m_arrivals.front()
+            ; it != m_arrivals.back(); ++it
         ) {
             if ( (*it) == passenger ) {
                 return true;
             }
         }
-        m_arrivals.push( passenger )
+        m_arrivals.push( passenger );
         return true;
     }
 };
@@ -166,21 +166,21 @@ protected:
     std::vector< const EdgeT& > m_edges_outgoing;
 
 public:
-    typedef typename PassengerNumber< num > passengernumber_t;
+    typedef PassengerNumber< num > passengernumber_t;
 
     PassengerNode()
-        :   PassengerNumber()
+        :   PassengerNumber< num >()
         ,   Node< GraphPassengerT >()
         ,   m_edges_outgoing()
     {}
     PassengerNode( const typename passengernumber_t::numberenumeration_t members )
-        :   PassengerNumber( members )
+        :   PassengerNumber< num >( members )
         ,   Node< GraphPassengerT >()
         ,   m_edges_outgoing()
     {}
 
     bool add_edge( const EdgeT& new_edge ) {
-        for ( std::vector< const EdgeT& >::const_iterator it = m_edges_outgoing.begin()
+        for ( typename std::vector< const EdgeT& >::const_iterator it = m_edges_outgoing.begin()
             ; it < m_edges_outgoing.end(); ++it
         ) {
             if ( (*it) == new_edge ) {
