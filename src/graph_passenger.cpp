@@ -7,6 +7,17 @@ GraphPassenger::GraphPassenger( const std::string name )
 {}
 
 
+const std::string GraphPassenger::getValue( const std::string key ) const {
+    for ( unsigned int i = 0; i < m_parameter_pairs.size(); i++ ) {
+        parameter_pair_t parameter_pair = m_parameter_pairs.at( i );
+        if ( parameter_pair.first == key ) {
+            return parameter_pair.second;
+        }
+    }
+    return std::string();
+}
+
+
 bool GraphPassenger::absolvedFunction() {
     /* DO SOMETHING WITH STACK VALUES */
     return true;

@@ -24,6 +24,8 @@ protected:
 public:
     GraphPassenger( const std::string name );
 
+    const std::string getValue( const std::string key ) const;
+
     virtual bool absolvedFunction();
     virtual bool absolvedActionFunction( const parameter_list_t parameters );
 };
