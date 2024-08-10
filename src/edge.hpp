@@ -5,15 +5,6 @@
 
 
 template< class GraphPassengerT = GraphPassenger >
-class Action {
-public:
-    virtual bool run( const GraphPassengerT& passenger ) { return false; }
-
-    Action() {}
-};
-
-
-template< class GraphPassengerT = GraphPassenger >
 class EdgeSimple {
 public:
     EdgeSimple();
@@ -31,15 +22,17 @@ class Edge
 {
 protected:
     ActionT& m_action;
+    std::string m_action_funcname;
 
 public:
-    Edge( const ActionT& action )
+    Edge( const ActionT& action, const std::string action_funcname )
         :   EdgeSimple< GraphPassengerT >()
         ,   m_action( action )
+        ,   m_action_funcname( action_funcname )
     {}
 
     bool absolve( const GraphPassengerT& passenger ) {
-        return this->m_action.run( passenger );
+        return this->m_action.run( passenger, m_action_funcname );
     }
 };
 

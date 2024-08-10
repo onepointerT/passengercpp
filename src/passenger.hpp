@@ -7,7 +7,7 @@
 #include "graph_passenger.hpp"
 
 
-template< typename num = int >
+template< typename num = num_default >
 class Range {
 public:
     const num from;
@@ -20,7 +20,7 @@ public:
 };
 
 
-template< typename num = int >
+template< typename num = num_default >
 class NumberEnumeration 
     :   protected std::vector< Range< num > > 
 {
@@ -41,6 +41,18 @@ public:
     void add_range( const num from, const num to ) {
         Range< num > rng( from, to );
         this->push_back( rng );
+    }
+
+    bool is_member( const num member_num ) {
+        for ( unsigned int i = 0; i < this->size(); i++ ) {
+            Range< num > rng = this->at( i );
+            if ( rng.from == 0 && rng.to == 0 ) {
+                return true;
+            } else if ( rng.from <= member_num && rng.to >= member_num ) {
+                return true;
+            }
+            return false;
+        }
     }
 
     size_t size() const {
@@ -64,7 +76,7 @@ public:
 };
 
 
-template< typename num = int >
+template< typename num = num_default >
 class PassengerNumber {
 public:
     typedef NumberEnumeration< num > numberenumeration_t;
@@ -110,7 +122,7 @@ protected:
     }
 
 public:
-    PassengerNumber( const NumberEnumeration< num > members )
+    PassengerNumber( const NumberEnumeration< num > members = Range<>(0, 0) )
         :   m_members( members )
         ,   m_members_count( members.size() )
         ,   m_members_there( 0 )
@@ -138,11 +150,12 @@ protected:
     std::queue< GraphPassengerT& > m_arrivals;
 
 public:
+    typedef GraphPassengerT node_passenger_t;
     Node()
         :   m_arrivals()
     {}
 
-    bool arrive( const GraphPassengerT& passenger ) {
+    virtual bool arrive( const GraphPassengerT& passenger ) {
         for ( typename std::queue< GraphPassengerT& >::const_iterator it = m_arrivals.front()
             ; it != m_arrivals.back(); ++it
         ) {
@@ -156,11 +169,42 @@ public:
 };
 
 
+template< class GraphPassengerT = GraphPassengerNumber<>, typename num = num_default >
+class NodeNumbered
+    :   public Node< GraphPassengerT >
+    ,   protected PassengerNumber< num >
+{
+protected:
+    
 
-template< class GraphPassengerT, class EdgeT, typename num = int >
+public:
+    NodeNumbered()
+        :   Node< GraphPassengerT >()
+        ,   PassengerNumber< num >()
+    {}
+
+    bool can_arrive( const GraphPassengerT& passenger ) {
+        return this->is_member( passenger.number() );
+    }
+
+    virtual bool arrive( const GraphPassengerT& passenger ) {
+        if ( this->can_arrive(passenger) ) {
+            return Node< GraphPassengerT >::arrive( passenger );
+        }
+        return false;
+    }
+
+    bool add_member_range( const num from, const num to ) {
+        Range< num > rng( from, to );
+        return PassengerNumber< num >::add_member( rng );
+    }
+};
+
+
+
+template< class GraphPassengerT, class EdgeT, typename num = num_default >
 class PassengerNode
-    :   public PassengerNumber< num >
-    ,   public Node< GraphPassengerT >
+    :   public NodeNumbered< GraphPassengerT >
 {
 protected:
     std::vector< const EdgeT& > m_edges_outgoing;
@@ -169,13 +213,11 @@ public:
     typedef PassengerNumber< num > passengernumber_t;
 
     PassengerNode()
-        :   PassengerNumber< num >()
-        ,   Node< GraphPassengerT >()
+        :   NodeNumbered< GraphPassengerT >()
         ,   m_edges_outgoing()
     {}
     PassengerNode( const typename passengernumber_t::numberenumeration_t members )
-        :   PassengerNumber< num >( members )
-        ,   Node< GraphPassengerT >()
+        :   NodeNumbered< GraphPassengerT >()
         ,   m_edges_outgoing()
     {}
 
