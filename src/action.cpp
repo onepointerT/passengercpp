@@ -13,3 +13,5 @@ ActionFunction::ActionFunction( const std::string nameof_func, action_function_t
 Action< GraphPassenger >;
 Action< GraphPassengerNumber<> >;
 Action< GraphPassengerNumber< num_non_default > >;
+ActionPassengerGroup< GraphPassengerNumber<> >;
+ActionPassengerGroup< GraphPassengerNumber< num_non_default > >;

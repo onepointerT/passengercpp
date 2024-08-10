@@ -2,14 +2,22 @@
 #pragma once
 
 #include <string>
+#include <utility>
+#include <vector>
 
-#include "action.hpp"
 #include "config.hpp"
+
+
+
+typedef typename std::pair< std::string, std::string > parameter_pair_t;
+typedef typename std::vector< parameter_pair_t > parameter_list_t;
 
 
 class GraphPassenger
     :   public std::string
 {
+public:
+
 protected:
     parameter_list_t m_parameter_pairs;
 

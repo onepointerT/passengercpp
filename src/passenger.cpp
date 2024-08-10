@@ -17,3 +17,5 @@ NodeNumbered< GraphPassengerNumber<> >;
 NodeNumbered< GraphPassengerNumber< num_non_default >, num_non_default >;
 PassengerNode< GraphPassenger, EdgeSimple<> >;
 PassengerNode< GraphPassenger, EdgeSimple<>, num_non_default >;
+PassengerNodeActional< GraphPassenger, EdgeSimple<>, num_default >;
+PassengerNodeActional< GraphPassengerNumber<>, EdgeSimple<>, num_default >;

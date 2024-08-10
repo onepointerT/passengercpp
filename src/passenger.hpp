@@ -4,6 +4,7 @@
 #include <queue>
 #include <vector>
 
+#include "action.hpp"
 #include "graph_passenger.hpp"
 
 
@@ -166,6 +167,19 @@ public:
         m_arrivals.push( passenger );
         return true;
     }
+
+    virtual GraphPassengerT& pop() {
+        return m_arrivals.pop();
+    }
+
+    virtual bool departure() {
+        if ( m_arrivals.size() == 0 ) {
+            return false;
+        }
+
+        this->pop();
+        return false;
+    }
 };
 
 
@@ -174,9 +188,6 @@ class NodeNumbered
     :   public Node< GraphPassengerT >
     ,   protected PassengerNumber< num >
 {
-protected:
-    
-
 public:
     NodeNumbered()
         :   Node< GraphPassengerT >()
@@ -184,7 +195,7 @@ public:
     {}
 
     bool can_arrive( const GraphPassengerT& passenger ) {
-        return this->is_member( passenger.number() );
+        return this->m_members.is_member( passenger.number() );
     }
 
     virtual bool arrive( const GraphPassengerT& passenger ) {
@@ -219,11 +230,15 @@ public:
     PassengerNode( const typename passengernumber_t::numberenumeration_t members )
         :   NodeNumbered< GraphPassengerT >()
         ,   m_edges_outgoing()
-    {}
+    {
+        for ( unsigned int i = 0; i < members.size(); i++ ) {
+            this->m_members.add_member( members.at(i) );
+        }
+    }
 
     bool add_edge( const EdgeT& new_edge ) {
-        for ( typename std::vector< const EdgeT& >::const_iterator it = m_edges_outgoing.begin()
-            ; it < m_edges_outgoing.end(); ++it
+        for ( typename std::vector< const EdgeT& >::const_iterator it = this->m_edges_outgoing.begin()
+            ; it < this->m_edges_outgoing.end(); ++it
         ) {
             if ( (*it) == new_edge ) {
                 return true;
@@ -232,5 +247,90 @@ public:
         m_edges_outgoing.push_back( new_edge );
         return true;
     }
+
+    virtual bool departureTo( const unsigned int edge_idx ) {
+        if ( this->m_arrivals.size() == 0 || this->m_edges_outgoing.size() < edge_idx ) {
+            return false;
+        }
+
+        GraphPassengerT& passenger = this->begin();
+        EdgeT& edge = this->m_edges_outgoing.at( edge_idx );
+        
+        if ( ! edge.absolve( passenger ) ) {
+            return false;
+        }
+
+        return this->departure();
+    }
 };
 
+
+template< class GraphPassengerT, class EdgeT, typename num = num_default >
+class PassengerNodeActional
+    :   public PassengerNode< GraphPassengerT, EdgeT, num >
+    ,   public ActionPassengerGroup< GraphPassengerT >
+{
+protected:
+    std::string m_func_pre_arrive;
+    std::string m_func_pre_departure;
+
+public:
+    typedef PassengerNumber< num > passengernumber_t;
+    typedef typename std::vector< GraphPassengerT& > passenger_group_t;
+
+    PassengerNodeActional()
+        :   PassengerNode< GraphPassengerT, EdgeT, num >()
+        ,   ActionPassengerGroup< GraphPassengerT >()
+    {}
+    PassengerNodeActional( const typename passengernumber_t::numberenumeration_t members )
+        :   PassengerNode< GraphPassengerT, EdgeT, num >( members )
+        ,   ActionPassengerGroup< GraphPassengerT >()
+    {}
+
+    virtual bool arrive( const GraphPassengerT& passenger ) {
+        if ( this->can_arrive(passenger) ) {
+            if ( ActionPassengerGroup< GraphPassengerT >::run( this->m_func_pre_arrive, passenger ) ) {
+                return Node< GraphPassengerT >::arrive( passenger );
+            }
+        }
+        return false;
+    }
+
+    virtual bool departureTo( const unsigned int edge_idx ) {
+        if ( this->m_arrivals.size() == 0 || this->m_edges_outgoing.size() < edge_idx ) {
+            return false;
+        }
+
+        GraphPassengerT& passenger = this->begin();
+
+        if ( ! ActionPassengerGroup< GraphPassengerT >::run( this->m_func_pre_departure, passenger ) ) {
+            return false;
+        }
+
+        EdgeT& edge = this->m_edges_outgoing.at( edge_idx );
+        
+        if ( ! edge.absolve( passenger ) ) {
+            return false;
+        }
+
+        return this->departure();
+    }
+
+    virtual unsigned int run( const std::string funcname, const passenger_group_t& passenger_group = passenger_group_t() ) {
+        if ( passenger_group.size() == 0 ) {
+            // Actional with all passenger markers currently available at this node
+            return ActionPassengerGroup< GraphPassengerT >::run( { this->m_arrivals.begin(), this->m_arrivals.end() } );
+        }
+
+        unsigned int missed = 0;
+        for ( typename passenger_group_t::const_iterator it = passenger_group.begin()
+            ; it != passenger_group.end(); ++it
+        ) {
+            if ( ! ActionPassengerGroup< GraphPassengerT >::run( funcname, *it ) ) {
+                ++missed;
+            }
+        }
+
+        return missed;
+    }
+};

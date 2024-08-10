@@ -2,6 +2,7 @@
 #pragma once
 
 #include "graph_passenger.hpp"
+#include "passenger.hpp"
 
 
 template< class GraphPassengerT = GraphPassenger >
@@ -18,7 +19,7 @@ public:
 
 template< class GraphPassengerT, class ActionT >
 class Edge
-    :   EdgeSimple< GraphPassengerT >
+    :   public EdgeSimple< GraphPassengerT >
 {
 protected:
     ActionT& m_action;
@@ -39,9 +40,9 @@ public:
 
 template< class GraphPassengerT
         , class ActionT
-        , class NodeT >
+        , class NodeT = NodeNumbered< num_default > >
 class EdgeToNode
-    :   Edge< GraphPassengerT, ActionT >
+    :   public Edge< GraphPassengerT, ActionT >
 {
 protected:
     NodeT* m_target_node;
@@ -54,6 +55,50 @@ public:
 
     bool arriveAtNode( const GraphPassengerT& passenger ) {
         return m_target_node->arrive( passenger );
+    }
+
+    bool absolve( const GraphPassengerT& passenger ) {
+        if ( Edge< GraphPassengerT, ActionT >::absolve( passenger ) ) {
+            return this->arriveAtNode( passenger );
+        }
+        return false;
+    }
+};
+
+
+template< class GraphPassengerT
+        , class ActionT
+        , class NodeT = NodeNumbered< num_default >
+        , typename num = num_default >
+class EdgeControlled
+    :   public EdgeToNode< GraphPassengerT, ActionT, NodeT >
+    ,   public PassengerNumber< num >
+{
+protected:
+    NodeT* m_target_node;
+
+public:
+    EdgeControlled( const ActionT& action, NodeT* node = nullptr )
+        :   Edge< GraphPassengerT, ActionT >( action )
+        ,   m_target_node( node )
+    {}
+
+    bool arriveAtNode( const GraphPassengerT& passenger ) {
+        if ( this->m_target_node->can_arrive( passenger ) ) {
+            return m_target_node->arrive( passenger );
+        }
+        return false;
+    }
+
+    bool departure_possible_here( const GraphPassengerT& passenger ) {
+        return this->m_members.is_member( passenger );
+    }
+
+    bool departure_along_this( const GraphPassengerT& passenger ) {
+        if ( this->departure_possible_here( passenger ) ) {
+            return this->absolve( passenger );
+        }
+        return false;
     }
 
     bool absolve( const GraphPassengerT& passenger ) {

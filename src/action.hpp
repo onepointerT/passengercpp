@@ -1,16 +1,14 @@
 
 #pragma once
 
+#include "config.hpp"
+#include "graph_passenger.hpp"
+
 #include <functional>
 #include <string>
 #include <vector>
 #include <utility>
 
-
-class GraphPassenger;
-
-typedef typename std::pair< std::string, std::string > parameter_pair_t;
-typedef typename std::vector< parameter_pair_t > parameter_list_t;
 
 extern "C" {
 typedef typename std::vector< std::pair< std::string, std::string > >(*action_function_t)(GraphPassenger&, std::string);
@@ -92,4 +90,38 @@ public:
 
 
 template<class GraphPassengerT> std::vector<ActionFunction> Action<GraphPassengerT>::m_functions
+    = std::vector<ActionFunction>();
+
+
+
+template< class GraphPassengerT = GraphPassengerNumber<> >
+class ActionPassengerGroup
+    :   public Action< GraphPassengerT >
+{
+protected:
+    static std::vector< ActionFunction > m_functions;
+
+public:
+    typedef typename std::vector< GraphPassengerT& > passenger_group_t;
+
+    ActionPassengerGroup()
+        :   Action< GraphPassengerT >()
+    {}
+
+    virtual bool run( const std::string funcname, const passenger_group_t& passenger_group ) {
+        for ( typename std::vector< ActionFunction >::iterator it = m_functions.begin()
+            ; it != m_functions.end(); ++it
+        ) {
+            if ( it->funcname == funcname ) {
+                return it->run< const passenger_group_t& >( passenger_group, funcname );
+            }
+        }
+
+        return false;
+    }
+};
+
+
+
+template<class GraphPassengerT> std::vector<ActionFunction> ActionPassengerGroup<GraphPassengerT>::m_functions
     = std::vector<ActionFunction>();
