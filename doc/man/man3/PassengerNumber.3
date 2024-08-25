@@ -1,0 +1,216 @@
+.TH "PassengerNumber< num >" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PassengerNumber< num > \- A controller for \fR\fBNumberEnumeration\fP\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <passenger\&.hpp>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBNumberEnumeration\fP< num > \fBnumberenumeration_t\fP"
+.br
+.RI "A \fR\fBNumberEnumeration\fP< num >\fP with the numeric type \fRnum\fP\&. "
+.ti -1c
+.RI "typedef \fBRange\fP< num > \fBmember_t\fP"
+.br
+.RI "A \fR\fBRange\fP< num >\fP with the numeric type \fRnum\fP\&. "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPassengerNumber\fP (const \fBNumberEnumeration\fP< num > members=\fBNumberEnumeration\fP< num >())"
+.br
+.RI "The constructor\&. "
+.ti -1c
+.RI "\fBPassengerNumber\fP ()"
+.br
+.RI "The constructor\&. "
+.ti -1c
+.RI "bool \fBadd_member\fP (const \fBmember_t\fP member_range)"
+.br
+.RI "Add a new member range to \fRm_members\fP\&. Only fulfills, if disjunct to the others that are already stored\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const num \fBhighest_member_number\fP (const \fBNumberEnumeration\fP< num > members)"
+.br
+.RI "The infimum (highest number) of a number enumeration\&. "
+.ti -1c
+.RI "bool \fBmember_range_disjunct\fP (const \fBmember_t\fP mem) const"
+.br
+.RI "Find out, if another member range is disjunct to all other ranges, that means that it is not within one of the \fR\fBRange\fP\fP of \fRm_members\fP\&. "
+.ti -1c
+.RI "bool \fBmember_ranges_disjunct\fP () const"
+.br
+.RI "Find out, if all member ranges are disjunct to all other ranges, that means that it is not within one of the \fR\fBRange\fP\fP per object of \fRm_members\fP\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBNumberEnumeration\fP< num > \fBm_members\fP"
+.br
+.RI "The members that are enumerated here\&. "
+.ti -1c
+.RI "num \fBm_members_count\fP"
+.br
+.RI "The amount of members that are in the ranges of \fRm_members\fP\&. "
+.ti -1c
+.RI "num \fBm_members_there\fP"
+.br
+.RI "The amount of members that are here\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename num = num_default>
+.br
+class PassengerNumber< num >"A controller for \fR\fBNumberEnumeration\fP\fP\&. 
+
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fInum\fP The numeric type for this class and \fR\fBNumberEnumeration\fP\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB113\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<typename num  = num_default> \fBRange\fP< num > \fBPassengerNumber\fP< num >::member_t"
+
+.PP
+A \fR\fBRange\fP< num >\fP with the numeric type \fRnum\fP\&. 
+.PP
+Definition at line \fB118\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> \fBNumberEnumeration\fP< num > \fBPassengerNumber\fP< num >::numberenumeration_t"
+
+.PP
+A \fR\fBNumberEnumeration\fP< num >\fP with the numeric type \fRnum\fP\&. 
+.PP
+Definition at line \fB116\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename num  = num_default> \fBPassengerNumber\fP< num >\fB::PassengerNumber\fP (const \fBNumberEnumeration\fP< num > members = \fR\fBNumberEnumeration\fP< num >()\fP)\fR [inline]\fP"
+
+.PP
+The constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImembers\fP A default number enumeration with ranges that is to be set for \fRm_members\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB175\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> \fBPassengerNumber\fP< num >\fB::PassengerNumber\fP ()\fR [inline]\fP"
+
+.PP
+The constructor\&. 
+.PP
+Definition at line \fB181\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename num  = num_default> bool \fBPassengerNumber\fP< num >::add_member (const \fBmember_t\fP member_range)\fR [inline]\fP"
+
+.PP
+Add a new member range to \fRm_members\fP\&. Only fulfills, if disjunct to the others that are already stored\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImember_range\fP The new member range for this class with the type \fR\fBRange\fP< num >\fP\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True, if the new range is not within another already stored range, false otherwise\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB190\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> const num \fBPassengerNumber\fP< num >::highest_member_number (const \fBNumberEnumeration\fP< num > members)\fR [inline]\fP, \fR [protected]\fP"
+
+.PP
+The infimum (highest number) of a number enumeration\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImembers\fP A \fRnumberenumeration_t\fP e\&.ex\&. \fRnum hi = this->highest_member_number( this );\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The highest number of all ranges in \fRm_members\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB131\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> bool \fBPassengerNumber\fP< num >::member_range_disjunct (const \fBmember_t\fP mem) const\fR [inline]\fP, \fR [protected]\fP"
+
+.PP
+Find out, if another member range is disjunct to all other ranges, that means that it is not within one of the \fR\fBRange\fP\fP of \fRm_members\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImem\fP The other member range\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True, if the other member range is not within one of the ranges of \fRm_members\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB145\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> bool \fBPassengerNumber\fP< num >::member_ranges_disjunct () const\fR [inline]\fP, \fR [protected]\fP"
+
+.PP
+Find out, if all member ranges are disjunct to all other ranges, that means that it is not within one of the \fR\fBRange\fP\fP per object of \fRm_members\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+True, if the other member ranges are not within one of the ranges of \fRm_members\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB159\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename num  = num_default> \fBNumberEnumeration\fP< num > \fBPassengerNumber\fP< num >::m_members\fR [protected]\fP"
+
+.PP
+The members that are enumerated here\&. 
+.PP
+Definition at line \fB122\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> num \fBPassengerNumber\fP< num >::m_members_count\fR [protected]\fP"
+
+.PP
+The amount of members that are in the ranges of \fRm_members\fP\&. 
+.PP
+Definition at line \fB124\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> num \fBPassengerNumber\fP< num >::m_members_there\fR [protected]\fP"
+
+.PP
+The amount of members that are here\&. 
+.PP
+Definition at line \fB126\fP of file \fBpassenger\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

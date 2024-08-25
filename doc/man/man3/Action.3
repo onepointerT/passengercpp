@@ -1,0 +1,153 @@
+.TH "Action< GraphPassengerT >" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Action< GraphPassengerT > \- An action that can be performed and where named functionals can be absolved\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <action\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual bool \fBrun\fP (const std::string funcname, const GraphPassengerT &passenger)"
+.br
+.RI "Absolve a function with a funcname and get the passenger absolvent absolving the functional \fR\fBActionFunction::run\fP< GraphPassengerT >( passenger, funcname )\fP\&. "
+.ti -1c
+.RI "\fBAction\fP ()"
+.br
+.RI "The constructor of \fR\fBAction\fP\fP\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBregister_function\fP (const \fBActionFunction\fP &function)"
+.br
+.RI "Register an \fR\fBActionFunction\fP\fP for absolvents at the static contingent of different functions (\fRm_functions\fP)\&. Sets the function instead of an existing, if a function with this name is already found\&. "
+.ti -1c
+.RI "static unsigned int \fBregister_functions\fP (const std::vector< \fBActionFunction\fP > functions)"
+.br
+.RI "Register a list of functions\&. Works per function of the list \fRfunctions\fP like \fR\fBAction\fP< GraphPassengerT >::\fBregister_function()\fP\fP\&. "
+.in -1c
+.SS "Static Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "static std::vector< \fBActionFunction\fP > \fBm_functions\fP = std::vector<\fBActionFunction\fP>()"
+.br
+.RI "A static list of \fRActionFunctions\fP that are available to be absolved\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class GraphPassengerT = GraphPassenger>
+.br
+class Action< GraphPassengerT >"An action that can be performed and where named functionals can be absolved\&. 
+
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIGraphPassengerT\fP The type of the graph passengers, at least a specialization of \fR\fBGraphPassenger\fP\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB66\fP of file \fBaction\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class GraphPassengerT  = GraphPassenger> \fBAction\fP< GraphPassengerT >\fB::Action\fP ()\fR [inline]\fP"
+
+.PP
+The constructor of \fR\fBAction\fP\fP\&. 
+.PP
+\fBNote\fP
+.RS 4
+Does not need to be called to register functions\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB128\fP of file \fBaction\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class GraphPassengerT  = GraphPassenger> static bool \fBAction\fP< GraphPassengerT >::register_function (const \fBActionFunction\fP & function)\fR [inline]\fP, \fR [static]\fP"
+
+.PP
+Register an \fR\fBActionFunction\fP\fP for absolvents at the static contingent of different functions (\fRm_functions\fP)\&. Sets the function instead of an existing, if a function with this name is already found\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfunction\fP The function of the type \fRaction_function_t\fP for absolvents of action functions\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Success or not\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB76\fP of file \fBaction\&.hpp\fP\&.
+.SS "template<class GraphPassengerT  = GraphPassenger> static unsigned int \fBAction\fP< GraphPassengerT >::register_functions (const std::vector< \fBActionFunction\fP > functions)\fR [inline]\fP, \fR [static]\fP"
+
+.PP
+Register a list of functions\&. Works per function of the list \fRfunctions\fP like \fR\fBAction\fP< GraphPassengerT >::\fBregister_function()\fP\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfunctions\fP A list of action functions\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The number of unsuccessful appliances (where \fR\fBregister_function()\fP\fP returned false\&.) 
+.RE
+.PP
+
+.PP
+Definition at line \fB95\fP of file \fBaction\&.hpp\fP\&.
+.SS "template<class GraphPassengerT  = GraphPassenger> virtual bool \fBAction\fP< GraphPassengerT >::run (const std::string funcname, const GraphPassengerT & passenger)\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+Absolve a function with a funcname and get the passenger absolvent absolving the functional \fR\fBActionFunction::run\fP< GraphPassengerT >( passenger, funcname )\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfuncname\fP The name of the chosen function 
+.br
+\fIpassenger\fP The absolvent of the corresponding graph passengers\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The return value of \fR\fBActionFunction::run()\fP\fP or false, if the function could not be found\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB114\fP of file \fBaction\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class GraphPassengerT > std::vector< \fBActionFunction\fP > \fBAction\fP< GraphPassengerT >::m_functions = std::vector<\fBActionFunction\fP>()\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+A static list of \fRActionFunctions\fP that are available to be absolved\&. Initializer for the function list with all available action functions\&.
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIGraphPassengerT\fP The type of absolvent, a passenger in the graph\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB69\fP of file \fBaction\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

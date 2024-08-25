@@ -1,0 +1,126 @@
+.TH "GraphPassenger" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GraphPassenger \- A traveller through a graph, its edges and nodes\&. Inherits \fRstd::string\fP for better naming convenience\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <graph_passenger\&.hpp>\fP
+.PP
+Inherits std::string\&.
+.PP
+Inherited by \fBGraphPassengerNumber< num >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGraphPassenger\fP (const std::string name)"
+.br
+.RI "The constructor\&. "
+.ti -1c
+.RI "const std::string \fBgetValue\fP (const std::string key) const"
+.br
+.RI "Get the value flag value of \fRm_parameter_pairs\fP for the key\&. "
+.ti -1c
+.RI "virtual bool \fBabsolvedFunction\fP ()"
+.br
+.RI "Can be called as informer, when a function was absolvated\&. "
+.ti -1c
+.RI "virtual bool \fBabsolvedActionFunction\fP (const \fBparameter_list_t\fP parameters)"
+.br
+.RI "Can be called from an informing class, when a function actional like the ones from \fR\fBAction\fP\fP or a additionally contributing function\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBparameter_list_t\fP \fBm_parameter_pairs\fP"
+.br
+.RI "A \fRparameter_list_t\fP with parameter pair values of this travelling graph marker, also called value flags\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A traveller through a graph, its edges and nodes\&. Inherits \fRstd::string\fP for better naming convenience\&. 
+.PP
+Definition at line \fB18\fP of file \fBgraph_passenger\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "GraphPassenger::GraphPassenger (const std::string name)"
+
+.PP
+The constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name or an number as \fRstd::string\fP that identifies and difers this \fR\fBGraphPassenger\fP\fP from others\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB5\fP of file \fBgraph_passenger\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool GraphPassenger::absolvedActionFunction (const \fBparameter_list_t\fP parameters)\fR [virtual]\fP"
+
+.PP
+Can be called from an informing class, when a function actional like the ones from \fR\fBAction\fP\fP or a additionally contributing function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIparameters\fP Pass the changing parameters here\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Return the If the function succeeded\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB26\fP of file \fBgraph_passenger\&.cpp\fP\&.
+.SS "bool GraphPassenger::absolvedFunction ()\fR [virtual]\fP"
+
+.PP
+Can be called as informer, when a function was absolvated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+If this function succeeded\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB21\fP of file \fBgraph_passenger\&.cpp\fP\&.
+.SS "const std::string GraphPassenger::getValue (const std::string key) const"
+
+.PP
+Get the value flag value of \fRm_parameter_pairs\fP for the key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP The key to lookup the parametristic value of\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The \fRstd::string value\fP found for \fRkey\fP or an empty literal\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB10\fP of file \fBgraph_passenger\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBparameter_list_t\fP GraphPassenger::m_parameter_pairs\fR [protected]\fP"
+
+.PP
+A \fRparameter_list_t\fP with parameter pair values of this travelling graph marker, also called value flags\&. 
+.PP
+Definition at line \fB25\fP of file \fBgraph_passenger\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

@@ -1,0 +1,153 @@
+.TH "GraphPassengerNumber< num >" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+GraphPassengerNumber< num > \- A specialization of \fR\fBGraphPassenger\fP\fP\&. Can be used to numerata the graph passengers\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <graph_passenger\&.hpp>\fP
+.PP
+Inherits \fBGraphPassenger\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fBGraphPassengerNumber\fP (const num member_num=++\fBGraphPassengerNumber::current_member_num\fP)"
+.br
+.RI "The constructor\&. Please specialize for another counting of next current numbers, e\&.ex\&. for \fRfloat\fP\&. "
+.ti -1c
+.RI "virtual \fBGraphPassengerNumber\fP (const std::string name, const num member_num=++\fBGraphPassengerNumber::current_member_num\fP)"
+.br
+.RI "The constructor\&. Please specialize for another counting of next current numbers, e\&.ex\&. for \fRfloat\fP\&. "
+.ti -1c
+.RI "const num \fBnumber\fP () const"
+.br
+.RI "Get the number of this \fR\fBGraphPassenger\fP\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBGraphPassenger\fP
+.in +1c
+.ti -1c
+.RI "\fBGraphPassenger\fP (const std::string name)"
+.br
+.RI "The constructor\&. "
+.ti -1c
+.RI "const std::string \fBgetValue\fP (const std::string key) const"
+.br
+.RI "Get the value flag value of \fRm_parameter_pairs\fP for the key\&. "
+.ti -1c
+.RI "virtual bool \fBabsolvedFunction\fP ()"
+.br
+.RI "Can be called as informer, when a function was absolvated\&. "
+.ti -1c
+.RI "virtual bool \fBabsolvedActionFunction\fP (const \fBparameter_list_t\fP parameters)"
+.br
+.RI "Can be called from an informing class, when a function actional like the ones from \fR\fBAction\fP\fP or a additionally contributing function\&. "
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static num \fBcurrent_member_num\fP = 0"
+.br
+.RI "A static counter for automatic indices of the next current number\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "const num \fBm_num\fP"
+.br
+.RI "The number that is saved for enumering graph passengers and its traveller marker\&. "
+.in -1c
+
+Protected Attributes inherited from \fBGraphPassenger\fP
+.in +1c
+.ti -1c
+.RI "\fBparameter_list_t\fP \fBm_parameter_pairs\fP"
+.br
+.RI "A \fRparameter_list_t\fP with parameter pair values of this travelling graph marker, also called value flags\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename num = num_default>
+.br
+class GraphPassengerNumber< num >"A specialization of \fR\fBGraphPassenger\fP\fP\&. Can be used to numerata the graph passengers\&. 
+
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fInum\fP The numeric type, that the graph works with for enumering the traveller markers\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB50\fP of file \fBgraph_passenger\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename num  = num_default> virtual \fBGraphPassengerNumber\fP< num >\fB::GraphPassengerNumber\fP (const num member_num = \fR++\fBGraphPassengerNumber\fP< num >\fB::current_member_num\fP\fP)\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+The constructor\&. Please specialize for another counting of next current numbers, e\&.ex\&. for \fRfloat\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImember_num\fP The member enumerata for this \fR\fBGraphPassenger\fP\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB63\fP of file \fBgraph_passenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> virtual \fBGraphPassengerNumber\fP< num >\fB::GraphPassengerNumber\fP (const std::string name, const num member_num = \fR++\fBGraphPassengerNumber\fP< num >\fB::current_member_num\fP\fP)\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+The constructor\&. Please specialize for another counting of next current numbers, e\&.ex\&. for \fRfloat\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP The name or an number as \fRstd::string\fP that identifies and difers this \fR\fBGraphPassenger\fP\fP from others\&. 
+.br
+\fImember_num\fP The member enumerata for this \fR\fBGraphPassenger\fP\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB71\fP of file \fBgraph_passenger\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename num  = num_default> const num \fBGraphPassengerNumber\fP< num >::number () const\fR [inline]\fP"
+
+.PP
+Get the number of this \fR\fBGraphPassenger\fP\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The enumerata of this passenger graph marker of the type \fRnum\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB78\fP of file \fBgraph_passenger\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename num  = num_default> num \fBGraphPassengerNumber\fP< num >::current_member_num = 0\fR [static]\fP"
+
+.PP
+A static counter for automatic indices of the next current number\&. 
+.PP
+Definition at line \fB59\fP of file \fBgraph_passenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> const num \fBGraphPassengerNumber\fP< num >::m_num\fR [protected]\fP"
+
+.PP
+The number that is saved for enumering graph passengers and its traveller marker\&. 
+.PP
+Definition at line \fB55\fP of file \fBgraph_passenger\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

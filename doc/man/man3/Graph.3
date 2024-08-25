@@ -1,0 +1,177 @@
+.TH "Graph< NodeT >" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Graph< NodeT > \- The simple graph's class\&. Stores all nodes of the type \fRNodeT*\fP and points also to a single start and a single end node\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <graph\&.hpp>\fP
+.PP
+Inherits std::vector< NodeT * >\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGraph\fP (NodeT *start=nullptr, NodeT *end=nullptr)"
+.br
+.RI "The constructor of a graph\&. "
+.ti -1c
+.RI "void \fBreset_start\fP (NodeT *node)"
+.br
+.RI "Reset the start node to the value of \fRnode\fP\&. "
+.ti -1c
+.RI "void \fBreset_end\fP (NodeT *node)"
+.br
+.RI "Reset the start node to the value of \fRnode\fP\&. "
+.ti -1c
+.RI "NodeT * \fBget_start\fP () const"
+.br
+.RI "Get the start node of the type \fRNodeT*\fP\&. "
+.ti -1c
+.RI "NodeT * \fBget_end\fP () const"
+.br
+.RI "Get the end node of the type \fRNodeT*\fP\&. "
+.ti -1c
+.RI "bool \fBsend_to_start\fP (typename NodeT::node_passenger_t &passenger)"
+.br
+.RI "Send a traveller marker to the start node\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "NodeT * \fBm_start\fP"
+.br
+.RI "A pointer to the start node\&. "
+.ti -1c
+.RI "NodeT * \fBm_end\fP"
+.br
+.RI "A pointer to the end node\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class NodeT>
+.br
+class Graph< NodeT >"The simple graph's class\&. Stores all nodes of the type \fRNodeT*\fP and points also to a single start and a single end node\&. 
+
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fINodeT\fP The nodes that appear inside of the graph\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB12\fP of file \fBgraph\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class NodeT > \fBGraph\fP< NodeT >\fB::Graph\fP (NodeT * start = \fRnullptr\fP, NodeT * end = \fRnullptr\fP)\fR [inline]\fP"
+
+.PP
+The constructor of a graph\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstart\fP The start node of the type \fRNodeT*\fP\&. 
+.br
+\fIend\fP The end node of the type \fRNodeT*\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB25\fP of file \fBgraph\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class NodeT > NodeT * \fBGraph\fP< NodeT >::get_end () const\fR [inline]\fP"
+
+.PP
+Get the end node of the type \fRNodeT*\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The end node\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB51\fP of file \fBgraph\&.hpp\fP\&.
+.SS "template<class NodeT > NodeT * \fBGraph\fP< NodeT >::get_start () const\fR [inline]\fP"
+
+.PP
+Get the start node of the type \fRNodeT*\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The start node\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB45\fP of file \fBgraph\&.hpp\fP\&.
+.SS "template<class NodeT > void \fBGraph\fP< NodeT >::reset_end (NodeT * node)\fR [inline]\fP"
+
+.PP
+Reset the start node to the value of \fRnode\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInode\fP The end node of the type \fRNodeT*\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB39\fP of file \fBgraph\&.hpp\fP\&.
+.SS "template<class NodeT > void \fBGraph\fP< NodeT >::reset_start (NodeT * node)\fR [inline]\fP"
+
+.PP
+Reset the start node to the value of \fRnode\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInode\fP The start node of the type \fRNodeT*\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB33\fP of file \fBgraph\&.hpp\fP\&.
+.SS "template<class NodeT > bool \fBGraph\fP< NodeT >::send_to_start (typename NodeT::node_passenger_t & passenger)\fR [inline]\fP"
+
+.PP
+Send a traveller marker to the start node\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpassenger\fP A graph passenger of the type \fRNodeT::node_passenger_t\fP\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The return value of \fRNodeT::arrive()\fP function\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB58\fP of file \fBgraph\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class NodeT > NodeT* \fBGraph\fP< NodeT >::m_end\fR [protected]\fP"
+
+.PP
+A pointer to the end node\&. 
+.PP
+Definition at line \fB19\fP of file \fBgraph\&.hpp\fP\&.
+.SS "template<class NodeT > NodeT* \fBGraph\fP< NodeT >::m_start\fR [protected]\fP"
+
+.PP
+A pointer to the start node\&. 
+.PP
+Definition at line \fB17\fP of file \fBgraph\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

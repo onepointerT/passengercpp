@@ -1,0 +1,107 @@
+.TH "src/action.hpp" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/action.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fR#include 'config\&.hpp'\fP
+.br
+\fR#include 'graph_passenger\&.hpp'\fP
+.br
+\fR#include <functional>\fP
+.br
+\fR#include <string>\fP
+.br
+\fR#include <vector>\fP
+.br
+\fR#include <utility>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBActionFunction\fP"
+.br
+.RI "An \fBAction\fP function a container for a function, that is to be run on getting, need to absolve and coincidating (taking apart in) an action\&. "
+.ti -1c
+.RI "class \fBAction< GraphPassengerT >\fP"
+.br
+.RI "An action that can be performed and where named functionals can be absolved\&. "
+.ti -1c
+.RI "class \fBActionGroupFunction< GraphPassengerT >\fP"
+.br
+.ti -1c
+.RI "class \fBActionPassengerGroup< GraphPassengerT >\fP"
+.br
+.RI "A specialization of \fR\fBAction\fP\fP with functions for grouped graph passenger absolvents\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef std::vector< std::pair< std::string, std::string > >(* \fBaction_function_t\fP) (\fBGraphPassenger\fP &, std::string)"
+.br
+.RI "An action_function_t defines the type a of method for an action needs to have and the types for parameters and return type\&. "
+.ti -1c
+.RI "typedef std::vector< std::pair< std::string, std::string > >(* \fBaction_group_function_t\fP) (std::vector< \fBGraphPassengerNumber\fP &, std::string)"
+.br
+.RI "An action_function_t defines the type a of method for an action needs to have and the types for parameters and return type\&. "
+.ti -1c
+.RI "typedef std::pair< std::string, \fBActionFunction\fP > \fBnamed_action_function_t\fP"
+.br
+.RI "An \fR\fBActionFunction\fP\fP that has a name\&. "
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef std::vector< std::pair< std::string, std::string > >(* action_function_t) (\fBGraphPassenger\fP &, std::string)"
+
+.PP
+An action_function_t defines the type a of method for an action needs to have and the types for parameters and return type\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBGraphPassenger\fP\fP A reference to an absolvent that is a specialiced class of \fR\fBGraphPassenger\fP\fP or \fR\fBGraphPassenger\fP\fP itself\&. 
+.br
+\fIstring\fP The name of the \fRaction_function_t\fP for synthetical sanity checks\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A list of named result tuples with \fR(std::string* absolvents_name, std::string result)\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB18\fP of file \fBaction\&.hpp\fP\&.
+.SS "typedef std::vector< std::pair< std::string, std::string > >(* action_group_function_t) (std::vector< \fBGraphPassengerNumber\fP &, std::string)"
+
+.PP
+An action_function_t defines the type a of method for an action needs to have and the types for parameters and return type\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBGraphPassenger\fP\fP A list with absolvents that are a specialiced class of \fR\fBGraphPassengerNumber\fP\fP or \fR\fBGraphPassengerNumber\fP\fP itself\&. 
+.br
+\fIstring\fP The name of the \fRaction_function_t\fP for synthetical sanity checks\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+A list of named result tuples with \fR(std::string* absolvents_name, std::string result)\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB23\fP of file \fBaction\&.hpp\fP\&.
+.SS "typedef std::pair< std::string, \fBActionFunction\fP > \fBnamed_action_function_t\fP"
+
+.PP
+An \fR\fBActionFunction\fP\fP that has a name\&. 
+.PP
+Definition at line \fB61\fP of file \fBaction\&.hpp\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

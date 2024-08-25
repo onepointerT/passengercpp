@@ -1,0 +1,5 @@
+<map id="Edge&lt; GraphPassengerT, ActionT &gt;" name="Edge&lt; GraphPassengerT, ActionT &gt;">
+<area shape="rect" id="Node000001" title="A normal edge with an action. A specialization of EdgeSimple&lt; GraphPassengerT &gt;" alt="" coords="30,80,201,123"/>
+<area shape="rect" id="Node000002" href="$class_edge_simple.html" title=" " alt="" coords="5,5,226,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,48,118,80,113,80,113,48"/>
+</map>

@@ -1,0 +1,134 @@
+.TH "Edge< GraphPassengerT, ActionT >" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Edge< GraphPassengerT, ActionT > \- A normal edge with an action\&. A specialization of \fR\fBEdgeSimple\fP< GraphPassengerT >\fP  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <edge\&.hpp>\fP
+.PP
+Inherits \fBEdgeSimple< GraphPassengerT >\fP\&.
+.PP
+Inherited by \fBEdgeToNode< GraphPassengerT, ActionT, NodeNumbered< num_default > >\fP, and \fBEdgeToNode< GraphPassengerT, ActionT, NodeT >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEdge\fP (const ActionT &action, const std::string action_funcname)"
+.br
+.RI "The constructor\&. "
+.ti -1c
+.RI "virtual bool \fBabsolve\fP (const GraphPassengerT &passenger)"
+.br
+.RI "Absolvate this edge with one passenger\&. "
+.in -1c
+
+Public Member Functions inherited from \fBEdgeSimple< GraphPassengerT >\fP
+.in +1c
+.ti -1c
+.RI "\fBEdgeSimple\fP ()"
+.br
+.RI "The constructor of this class\&. "
+.ti -1c
+.RI "virtual bool \fBarrive\fP (const GraphPassengerT &passenger)"
+.br
+.RI "Absolvate an edge, e\&.g\&. arrive at the edge with the next action or pass to the next node\&. Virtual function, needs to be specialized\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "ActionT & \fBm_action\fP"
+.br
+.RI "The \fRActionT\fP where actional function can be called at\&. "
+.ti -1c
+.RI "std::string \fBm_action_funcname\fP"
+.br
+.RI "An default action function name to be called when absolvating actions\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class GraphPassengerT, class ActionT>
+.br
+class Edge< GraphPassengerT, ActionT >"A normal edge with an action\&. A specialization of \fR\fBEdgeSimple\fP< GraphPassengerT >\fP 
+
+
+.PP
+\fBNote\fP
+.RS 4
+The last class that has no node as template parameter\&. 
+.RE
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIGraphPassengerT\fP The graph traveler, a subclass of \fR\fBGraphPassenger\fP\fP 
+.br
+\fIActionT\fP The \fR\fBAction\fP\fP type, where actional functions can be called of, a specialization of at least \fR\fBAction\fP\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB35\fP of file \fBedge\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class GraphPassengerT , class ActionT > \fBEdge\fP< GraphPassengerT, ActionT >\fB::Edge\fP (const ActionT & action, const std::string action_funcname)\fR [inline]\fP"
+
+.PP
+The constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIaction\fP The \fRActionT\fP where actional function can be called at\&. 
+.br
+\fIaction_funcname\fP An default action function name to be called when absolvating actions\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB48\fP of file \fBedge\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class GraphPassengerT , class ActionT > virtual bool \fBEdge\fP< GraphPassengerT, ActionT >::absolve (const GraphPassengerT & passenger)\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+Absolvate this edge with one passenger\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpassenger\fP The graph travelers that travel alongside this edge and can absolve an action\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+If the action was successfully absolved (the return value of \fR\fBAction::run()\fP\fP)\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBEdgeSimple< GraphPassengerT >\fP\&.
+.PP
+Reimplemented in \fBEdgeControlled< GraphPassengerT, ActionT, NodeT, num >\fP, \fBEdgeToNode< GraphPassengerT, ActionT, NodeT >\fP, and \fBEdgeToNode< GraphPassengerT, ActionT, NodeNumbered< num_default > >\fP\&.
+.PP
+Definition at line \fB57\fP of file \fBedge\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class GraphPassengerT , class ActionT > ActionT& \fBEdge\fP< GraphPassengerT, ActionT >::m_action\fR [protected]\fP"
+
+.PP
+The \fRActionT\fP where actional function can be called at\&. 
+.PP
+Definition at line \fB40\fP of file \fBedge\&.hpp\fP\&.
+.SS "template<class GraphPassengerT , class ActionT > std::string \fBEdge\fP< GraphPassengerT, ActionT >::m_action_funcname\fR [protected]\fP"
+
+.PP
+An default action function name to be called when absolvating actions\&. 
+.PP
+Definition at line \fB42\fP of file \fBedge\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

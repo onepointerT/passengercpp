@@ -1,0 +1,106 @@
+.TH "ActionFunction" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ActionFunction \- An \fBAction\fP function a container for a function, that is to be run on getting, need to absolve and coincidating (taking apart in) an action\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <action\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBActionFunction\fP (const std::string nameof_func, \fBaction_function_t\fP func)"
+.br
+.RI "The constructor of \fBActionFunction\fP\&. "
+.ti -1c
+.RI "template<class absolverT > bool \fBrun\fP (absolverT absolver, const std::string nameof_func)"
+.br
+.RI "Execute the actional function with an absolving passenger\&. Will inform the absolvent by \fR\fBGraphPassenger::absolvedActionFunction()\fP\fP\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "const std::string \fBfuncname\fP"
+.br
+.RI "The name of the function for similar lookups\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBaction_function_t\fP \fBm_func\fP"
+.br
+.RI "The class \fBActionFunction\fP stores one protected value of the type action_function_t for executing with the function \fRtemlate< class absolverT > \fBrun()\fP\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+An \fBAction\fP function a container for a function, that is to be run on getting, need to absolve and coincidating (taking apart in) an action\&. 
+.PP
+Definition at line \fB28\fP of file \fBaction\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ActionFunction::ActionFunction (const std::string nameof_func, \fBaction_function_t\fP func)"
+
+.PP
+The constructor of \fBActionFunction\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInameof_func\fP The name of the function for similar lookups 
+.br
+\fIfunc\fP An action_function_t for further execution on call to \fRtemlate< class absolverT > \fBrun()\fP\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB7\fP of file \fBaction\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class absolverT > bool ActionFunction::run (absolverT absolver, const std::string nameof_func)\fR [inline]\fP"
+
+.PP
+Execute the actional function with an absolving passenger\&. Will inform the absolvent by \fR\fBGraphPassenger::absolvedActionFunction()\fP\fP\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIabsolverT\fP The type of the absolving passenger, at least a specialization of the class \fR\fBGraphPassenger\fP\fP\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIabsolver\fP The absolver of the actional function 
+.br
+\fInameof_func\fP The name of the function to execute for further tests 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The return value of \fR\fBGraphPassenger::absolvedActionFunction()\fP\fP of the absolvent's instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB49\fP of file \fBaction\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "const std::string ActionFunction::funcname"
+
+.PP
+The name of the function for similar lookups\&. 
+.PP
+Definition at line \fB36\fP of file \fBaction\&.hpp\fP\&.
+.SS "\fBaction_function_t\fP ActionFunction::m_func\fR [protected]\fP"
+
+.PP
+The class \fBActionFunction\fP stores one protected value of the type action_function_t for executing with the function \fRtemlate< class absolverT > \fBrun()\fP\fP\&. 
+.PP
+Definition at line \fB32\fP of file \fBaction\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

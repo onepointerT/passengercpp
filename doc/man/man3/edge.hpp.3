@@ -1,0 +1,36 @@
+.TH "src/edge.hpp" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/edge.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fR#include 'graph_passenger\&.hpp'\fP
+.br
+\fR#include 'passenger\&.hpp'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBEdgeSimple< GraphPassengerT >\fP"
+.br
+.RI "A simple edge with all basic elements so that it can be inherited from\&. "
+.ti -1c
+.RI "class \fBEdge< GraphPassengerT, ActionT >\fP"
+.br
+.RI "A normal edge with an action\&. A specialization of \fR\fBEdgeSimple\fP< GraphPassengerT >\fP "
+.ti -1c
+.RI "class \fBEdgeToNode< GraphPassengerT, ActionT, NodeT >\fP"
+.br
+.RI "A inheriting class of of \fR\fBEdge\fP\fP that also contains a \fRNodeT\fP where it is directing to\&. A direct subclass of \fR\fBEdge\fP< GraphPassengerT, ActionT >\fP\&. "
+.ti -1c
+.RI "class \fBEdgeControlled< GraphPassengerT, ActionT, NodeT, num >\fP"
+.br
+.RI "A controlled edge that can have a few functions to controll, if arrivement, action and departure is possible here\&. A direct subclass of \fR\fBEdgeToNode\fP< GraphPassengerT, ActionT, NodeT >\fP and \fR\fBPassengerNumber\fP< num >\fP\&. "
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

@@ -1,0 +1,16 @@
+<map id="PassengerNumber&lt; num &gt;" name="PassengerNumber&lt; num &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,204,56"/>
+<area shape="rect" id="Node000002" href="$dc/deb/classNodeNumbered.html" title=" " alt="" coords="267,5,503,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,39,326,28,327,33,218,45"/>
+<area shape="poly" id="edge7_Node000001_Node000002" title=" " alt="" coords="177,26,267,17,267,22,177,32"/>
+<area shape="rect" id="Node000003" href="$dc/deb/classNodeNumbered.html" title=" " alt="" coords="252,55,519,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,50,252,53,252,59,217,56"/>
+<area shape="rect" id="Node000007" href="$d5/d38/classEdgeControlled.html" title=" " alt="" coords="265,105,506,145"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="156,58,253,89,302,102,300,107,251,94,154,63"/>
+<area shape="rect" id="Node000004" href="$d8/da6/classPassengerNode.html" title=" " alt="" coords="567,15,809,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="519,51,566,46,567,51,520,56"/>
+<area shape="rect" id="Node000005" href="$d8/da6/classPassengerNode.html" title=" " alt="" coords="567,79,809,119"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="520,79,567,84,566,89,519,84"/>
+<area shape="rect" id="Node000006" href="$da/da9/classPassengerNodeActional.html" title=" " alt="" coords="857,72,1060,127"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="823,97,857,97,857,102,823,102"/>
+</map>

@@ -1,0 +1,94 @@
+.TH "EdgeSimple< GraphPassengerT >" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EdgeSimple< GraphPassengerT > \- A simple edge with all basic elements so that it can be inherited from\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <edge\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEdgeSimple\fP ()"
+.br
+.RI "The constructor of this class\&. "
+.ti -1c
+.RI "virtual bool \fBabsolve\fP (const GraphPassengerT &passenger)"
+.br
+.RI "Absolvate an edge, e\&.g\&. pass the edge to the next node\&. Virtual function, needs to be specialized\&. "
+.ti -1c
+.RI "virtual bool \fBarrive\fP (const GraphPassengerT &passenger)"
+.br
+.RI "Absolvate an edge, e\&.g\&. arrive at the edge with the next action or pass to the next node\&. Virtual function, needs to be specialized\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class GraphPassengerT = GraphPassenger>
+.br
+class EdgeSimple< GraphPassengerT >"A simple edge with all basic elements so that it can be inherited from\&. 
+
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIGraphPassengerT\fP The graph traveler, a subclass of \fR\fBGraphPassenger\fP\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB11\fP of file \fBedge\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class GraphPassengerT  = GraphPassenger> \fBEdgeSimple\fP< GraphPassengerT >\fB::EdgeSimple\fP ()"
+
+.PP
+The constructor of this class\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class GraphPassengerT  = GraphPassenger> virtual bool \fBEdgeSimple\fP< GraphPassengerT >::absolve (const GraphPassengerT & passenger)\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+Absolvate an edge, e\&.g\&. pass the edge to the next node\&. Virtual function, needs to be specialized\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpassenger\fP The absolvent of the edge with the type \fRGraphPassengerT\fP\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Wether passing this edge succeeded or not\&. 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBEdge< GraphPassengerT, ActionT >\fP, \fBEdgeControlled< GraphPassengerT, ActionT, NodeT, num >\fP, \fBEdgeToNode< GraphPassengerT, ActionT, NodeT >\fP, and \fBEdgeToNode< GraphPassengerT, ActionT, NodeNumbered< num_default > >\fP\&.
+.PP
+Definition at line \fB19\fP of file \fBedge\&.hpp\fP\&.
+.SS "template<class GraphPassengerT  = GraphPassenger> virtual bool \fBEdgeSimple\fP< GraphPassengerT >::arrive (const GraphPassengerT & passenger)\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+Absolvate an edge, e\&.g\&. arrive at the edge with the next action or pass to the next node\&. Virtual function, needs to be specialized\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpassenger\fP The absolvent of the edge with the type \fRGraphPassengerT\fP\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Wether passing this edge succeeded or not\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB24\fP of file \fBedge\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

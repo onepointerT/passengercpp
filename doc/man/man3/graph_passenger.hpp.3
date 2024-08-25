@@ -1,0 +1,58 @@
+.TH "src/graph_passenger.hpp" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/graph_passenger.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <string>\fP
+.br
+\fR#include <utility>\fP
+.br
+\fR#include <vector>\fP
+.br
+\fR#include 'config\&.hpp'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBGraphPassenger\fP"
+.br
+.RI "A traveller through a graph, its edges and nodes\&. Inherits \fRstd::string\fP for better naming convenience\&. "
+.ti -1c
+.RI "class \fBGraphPassengerNumber< num >\fP"
+.br
+.RI "A specialization of \fR\fBGraphPassenger\fP\fP\&. Can be used to numerata the graph passengers\&. "
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef std::pair< std::string, std::string > \fBparameter_pair_t\fP"
+.br
+.RI "A parameter named tuple with (param_name, param_value)\&. "
+.ti -1c
+.RI "typedef std::vector< \fBparameter_pair_t\fP > \fBparameter_list_t\fP"
+.br
+.RI "A list of parameter named tuples of the type \fRparameter_pair_t\fP "
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef std::vector< \fBparameter_pair_t\fP > \fBparameter_list_t\fP"
+
+.PP
+A list of parameter named tuples of the type \fRparameter_pair_t\fP 
+.PP
+Definition at line \fB14\fP of file \fBgraph_passenger\&.hpp\fP\&.
+.SS "typedef std::pair< std::string, std::string > \fBparameter_pair_t\fP"
+
+.PP
+A parameter named tuple with (param_name, param_value)\&. 
+.PP
+Definition at line \fB12\fP of file \fBgraph_passenger\&.hpp\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

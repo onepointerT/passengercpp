@@ -1,0 +1,15 @@
+<map id="PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;" name="PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;">
+<area shape="rect" id="Node000001" title="The passenger node that is specially for GraphPassengerNumber, inherits NodeNumbered&lt; GraphPassengerT..." alt="" coords="775,52,962,111"/>
+<area shape="rect" id="Node000002" href="$class_passenger_node.html" title=" " alt="" coords="504,27,727,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="743,62,775,66,774,72,743,67"/>
+<area shape="rect" id="Node000003" href="$class_node_numbered.html" title=" " alt="" coords="235,27,456,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="471,45,504,45,504,51,471,51"/>
+<area shape="rect" id="Node000004" href="$class_node.html" title=" " alt="" coords="5,5,187,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="202,28,234,32,234,38,202,34"/>
+<area shape="rect" id="Node000005" href="$class_passenger_number.html" title=" " alt="" coords="13,56,179,99"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="195,63,234,58,235,64,195,68"/>
+<area shape="rect" id="Node000006" href="$class_action_passenger_group.html" title=" " alt="" coords="538,93,693,136"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="708,100,774,91,775,96,709,105"/>
+<area shape="rect" id="Node000007" href="$class_action.html" title=" " alt="" coords="252,101,439,128"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="455,112,538,112,538,117,455,117"/>
+</map>

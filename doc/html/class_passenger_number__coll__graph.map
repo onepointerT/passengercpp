@@ -1,0 +1,7 @@
+<map id="PassengerNumber&lt; num &gt;" name="PassengerNumber&lt; num &gt;">
+<area shape="rect" id="Node000001" title="A controller for NumberEnumeration." alt="" coords="5,204,184,231"/>
+<area shape="rect" id="Node000002" href="$class_number_enumeration.html" title=" " alt="" coords="20,97,169,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,156,97,204,92,204,92,156"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="28,5,161,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,64,97,97,92,97,92,64"/>
+</map>

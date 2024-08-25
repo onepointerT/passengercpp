@@ -1,0 +1,168 @@
+.TH "EdgeToNode< GraphPassengerT, ActionT, NodeT >" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EdgeToNode< GraphPassengerT, ActionT, NodeT > \- A inheriting class of of \fR\fBEdge\fP\fP that also contains a \fRNodeT\fP where it is directing to\&. A direct subclass of \fR\fBEdge\fP< GraphPassengerT, ActionT >\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <edge\&.hpp>\fP
+.PP
+Inherits \fBEdge< GraphPassengerT, ActionT >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEdgeToNode\fP (const ActionT &action, NodeT *node=nullptr)"
+.br
+.RI "The constructor of this class\&. "
+.ti -1c
+.RI "virtual bool \fBarriveAtNode\fP (const GraphPassengerT &passenger)"
+.br
+.RI "Don't stay on the edge, arrive at the goaling node\&. "
+.ti -1c
+.RI "virtual bool \fBabsolve\fP (const GraphPassengerT &passenger)"
+.br
+.RI "Absolve the action at this edge and travel to the node\&. "
+.in -1c
+
+Public Member Functions inherited from \fBEdge< GraphPassengerT, ActionT >\fP
+.in +1c
+.ti -1c
+.RI "\fBEdge\fP (const ActionT &action, const std::string action_funcname)"
+.br
+.RI "The constructor\&. "
+.in -1c
+
+Public Member Functions inherited from \fBEdgeSimple< GraphPassengerT >\fP
+.in +1c
+.ti -1c
+.RI "\fBEdgeSimple\fP ()"
+.br
+.RI "The constructor of this class\&. "
+.ti -1c
+.RI "virtual bool \fBarrive\fP (const GraphPassengerT &passenger)"
+.br
+.RI "Absolvate an edge, e\&.g\&. arrive at the edge with the next action or pass to the next node\&. Virtual function, needs to be specialized\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "NodeT * \fBm_target_node\fP"
+.br
+.RI "A pointer to the node which the edge is directed to and that archieved as goaling node\&. "
+.in -1c
+
+Protected Attributes inherited from \fBEdge< GraphPassengerT, ActionT >\fP
+.in +1c
+.ti -1c
+.RI "ActionT & \fBm_action\fP"
+.br
+.RI "The \fRActionT\fP where actional function can be called at\&. "
+.ti -1c
+.RI "std::string \fBm_action_funcname\fP"
+.br
+.RI "An default action function name to be called when absolvating actions\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class GraphPassengerT, class ActionT, class NodeT = NodeNumbered< num_default >>
+.br
+class EdgeToNode< GraphPassengerT, ActionT, NodeT >"A inheriting class of of \fR\fBEdge\fP\fP that also contains a \fRNodeT\fP where it is directing to\&. A direct subclass of \fR\fBEdge\fP< GraphPassengerT, ActionT >\fP\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+The first class that has a node as template parameter\&. Can be combined with subclasses of and with \fR\fBNodeNumbered\fP\fP or \fR\fBNode\fP\fP that don't use edges for template parameters (because of cyclic template parameters)\&. NOTE: Base classes also work as a template parameter\&. 
+.RE
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIGraphPassengerT\fP The graph traveler, a subclass of \fR\fBGraphPassenger\fP\fP 
+.br
+\fIActionT\fP The \fR\fBAction\fP\fP type, where actional functions can be called of, a specialization of at least \fR\fBAction\fP\fP\&. 
+.br
+\fINodeT\fP The node class that is used as a first base class with this edges, can't contain an edge as template parameters because of cyclic template parameters\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB75\fP of file \fBedge\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class GraphPassengerT , class ActionT , class NodeT  = NodeNumbered< num_default >> \fBEdgeToNode\fP< GraphPassengerT, ActionT, NodeT >\fB::EdgeToNode\fP (const ActionT & action, NodeT * node = \fRnullptr\fP)\fR [inline]\fP"
+
+.PP
+The constructor of this class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIaction\fP The action that is used for calling of actional functions\&. May be a singleton\&. 
+.br
+\fInode\fP The node where this edge ends at\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB86\fP of file \fBedge\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class GraphPassengerT , class ActionT , class NodeT  = NodeNumbered< num_default >> virtual bool \fBEdgeToNode\fP< GraphPassengerT, ActionT, NodeT >::absolve (const GraphPassengerT & passenger)\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+Absolve the action at this edge and travel to the node\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpassenger\fP The traveller and absolvent at this edge\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+False, if the action could not be absolved and \fR\fBarriveAtNode()\fP\fP else\&. 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBEdge< GraphPassengerT, ActionT >\fP\&.
+.PP
+Reimplemented in \fBEdgeControlled< GraphPassengerT, ActionT, NodeT, num >\fP\&.
+.PP
+Definition at line \fB103\fP of file \fBedge\&.hpp\fP\&.
+.SS "template<class GraphPassengerT , class ActionT , class NodeT  = NodeNumbered< num_default >> virtual bool \fBEdgeToNode\fP< GraphPassengerT, ActionT, NodeT >::arriveAtNode (const GraphPassengerT & passenger)\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+Don't stay on the edge, arrive at the goaling node\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpassenger\fP The traveller of this edge\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns \fRNodeT::arrive\fP or false, if this edge does not store a target node\&. 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBEdgeControlled< GraphPassengerT, ActionT, NodeT, num >\fP\&.
+.PP
+Definition at line \fB94\fP of file \fBedge\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class GraphPassengerT , class ActionT , class NodeT  = NodeNumbered< num_default >> NodeT* \fBEdgeToNode\fP< GraphPassengerT, ActionT, NodeT >::m_target_node\fR [protected]\fP"
+
+.PP
+A pointer to the node which the edge is directed to and that archieved as goaling node\&. 
+.PP
+Definition at line \fB80\fP of file \fBedge\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

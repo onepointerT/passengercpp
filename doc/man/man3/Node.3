@@ -1,0 +1,140 @@
+.TH "Node< GraphPassengerT >" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Node< GraphPassengerT > \- A simple node\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <passenger\&.hpp>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef GraphPassengerT \fBnode_passenger_t\fP"
+.br
+.RI "The type of the node traveller\&. "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNode\fP ()"
+.br
+.RI "The constructor\&. "
+.ti -1c
+.RI "virtual bool \fBarrive\fP (const GraphPassengerT &passenger)"
+.br
+.RI "Arrive with one traveller's marker at this node\&. "
+.ti -1c
+.RI "virtual GraphPassengerT & \fBpop\fP ()"
+.br
+.RI "Get the first element out of the queue and delete it inside of the queue\&. "
+.ti -1c
+.RI "virtual bool \fBdeparture\fP ()"
+.br
+.RI "Leave this node\&. Calls \fRthis->\fBpop()\fP\fP, but needs to be specialiced in inheriting class, because no edge is known here\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::queue< GraphPassengerT & > \fBm_arrivals\fP"
+.br
+.RI "A \fRstd::queue\fP with all graph markers that are currently at this node\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class GraphPassengerT = GraphPassenger>
+.br
+class Node< GraphPassengerT >"A simple node\&. 
+
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIGraphPassengerT\fP A graph passenger's graph marker, an inheritor of at least \fR\fBGraphPassenger\fP\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB204\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<class GraphPassengerT  = GraphPassenger> GraphPassengerT \fBNode\fP< GraphPassengerT >::node_passenger_t"
+
+.PP
+The type of the node traveller\&. 
+.PP
+Definition at line \fB211\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class GraphPassengerT  = GraphPassenger> \fBNode\fP< GraphPassengerT >\fB::Node\fP ()\fR [inline]\fP"
+
+.PP
+The constructor\&. 
+.PP
+Definition at line \fB214\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class GraphPassengerT  = GraphPassenger> virtual bool \fBNode\fP< GraphPassengerT >::arrive (const GraphPassengerT & passenger)\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+Arrive with one traveller's marker at this node\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpassenger\fP A graph marker that is already a specializing inheritor of \fR\fBGraphPassenger\fP\fP or \fR\fBGraphPassengerNumber\fP\fP\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True on success\&. 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBNodeNumbered< GraphPassengerT, num_default >\fP, \fBNodeNumbered< num_default >\fP, and \fBPassengerNodeActional< GraphPassengerT, EdgeT, num >\fP\&.
+.PP
+Definition at line \fB221\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<class GraphPassengerT  = GraphPassenger> virtual bool \fBNode\fP< GraphPassengerT >::departure ()\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+Leave this node\&. Calls \fRthis->\fBpop()\fP\fP, but needs to be specialiced in inheriting class, because no edge is known here\&. 
+.PP
+\fBReturns\fP
+.RS 4
+False\&. On inheritance true, if successfully on edge or at the next node\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB241\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<class GraphPassengerT  = GraphPassenger> virtual GraphPassengerT & \fBNode\fP< GraphPassengerT >::pop ()\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+Get the first element out of the queue and delete it inside of the queue\&. 
+.PP
+\fBReturns\fP
+.RS 4
+A \fRGraphPassengerT&\fP, e\&.h\&. the first element of the used \fRstd::queue< GraphPassengerT& >\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB235\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class GraphPassengerT  = GraphPassenger> std::queue< GraphPassengerT& > \fBNode\fP< GraphPassengerT >::m_arrivals\fR [protected]\fP"
+
+.PP
+A \fRstd::queue\fP with all graph markers that are currently at this node\&. 
+.PP
+Definition at line \fB207\fP of file \fBpassenger\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

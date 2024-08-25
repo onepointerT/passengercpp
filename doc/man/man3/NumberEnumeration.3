@@ -1,0 +1,211 @@
+.TH "NumberEnumeration< num >" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NumberEnumeration< num > \- A simple number enumeration that keeps track of ranges of member marker's enumerata number so that they can be member, allowed or unallowed on an attributed object\&. Inherits \fRstd::vector< \fBRange\fP< num > >\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <passenger\&.hpp>\fP
+.PP
+Inherits std::vector< Range< num_default > >\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef std::vector< \fBRange\fP< num > >::const_iterator \fBiterator\fP"
+.br
+.RI "The iterator type of \fR\fBNumberEnumeration\fP\fP\&. "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNumberEnumeration\fP ()"
+.br
+.RI "The constructor\&. "
+.ti -1c
+.RI "void \fBadd_range\fP (const \fBRange\fP< num > rng)"
+.br
+.RI "Add a \fR\fBRange\fP< num >\fP that reflects new members, allowances or disallowances with a class inheriting from \fR\fBNumberEnumeration\fP\fP\&. "
+.ti -1c
+.RI "void \fBadd_range\fP (const num from, const num to)"
+.br
+.RI "Add a \fR\fBRange\fP< num >\fP (from, to), that reflects new members, allowances or disallowances with a class inheriting from \fR\fBNumberEnumeration\fP\fP\&. "
+.ti -1c
+.RI "bool \fBis_member\fP (const num member_num)"
+.br
+.RI "Test, if a number is member in one of the ranges or not\&. "
+.ti -1c
+.RI "size_t \fBsize\fP () const"
+.br
+.RI "Returns the number of currently stored ranges\&. "
+.ti -1c
+.RI "const \fBRange\fP< num > & \fBat\fP (const unsigned int pos) const"
+.br
+.RI "Get the \fR\fBRange\fP< num >\fP at the position \fRpos\fP\&. "
+.ti -1c
+.RI "\fBiterator\fP \fBbegin\fP () const"
+.br
+.RI "Get an iterator to the first position\&. "
+.ti -1c
+.RI "\fBiterator\fP \fBend\fP () const"
+.br
+.RI "Get an iterator to behind-the-last element's position\&. "
+.in -1c
+.SS "Protected Types"
+
+.in +1c
+.ti -1c
+.RI "typedef std::vector< \fBRange\fP< num > > \fBvector_t\fP"
+.br
+.RI "The vector type of \fR\fBNumberEnumeration\fP\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename num = num_default>
+.br
+class NumberEnumeration< num >"A simple number enumeration that keeps track of ranges of member marker's enumerata number so that they can be member, allowed or unallowed on an attributed object\&. Inherits \fRstd::vector< \fBRange\fP< num > >\fP\&. 
+
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fInum\fP The numeric type of the \fBNumberEnumeration\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB36\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<typename num  = num_default> std::vector<\fBRange\fP<num>>::const_iterator \fBNumberEnumeration\fP< num >::iterator"
+
+.PP
+The iterator type of \fR\fBNumberEnumeration\fP\fP\&. 
+.PP
+Definition at line \fB45\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> std::vector< \fBRange\fP< num > > \fBNumberEnumeration\fP< num >::vector_t\fR [protected]\fP"
+
+.PP
+The vector type of \fR\fBNumberEnumeration\fP\fP\&. 
+.PP
+Definition at line \fB41\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename num  = num_default> \fBNumberEnumeration\fP< num >\fB::NumberEnumeration\fP ()\fR [inline]\fP"
+
+.PP
+The constructor\&. 
+.PP
+Definition at line \fB48\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename num  = num_default> void \fBNumberEnumeration\fP< num >::add_range (const num from, const num to)\fR [inline]\fP"
+
+.PP
+Add a \fR\fBRange\fP< num >\fP (from, to), that reflects new members, allowances or disallowances with a class inheriting from \fR\fBNumberEnumeration\fP\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrng\fP A range that interval includes all member's numbers\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB60\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> void \fBNumberEnumeration\fP< num >::add_range (const \fBRange\fP< num > rng)\fR [inline]\fP"
+
+.PP
+Add a \fR\fBRange\fP< num >\fP that reflects new members, allowances or disallowances with a class inheriting from \fR\fBNumberEnumeration\fP\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrng\fP A range that interval includes all member's numbers\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB54\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> const \fBRange\fP< num > & \fBNumberEnumeration\fP< num >::at (const unsigned int pos) const\fR [inline]\fP"
+
+.PP
+Get the \fR\fBRange\fP< num >\fP at the position \fRpos\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpos\fP The position of the range inside the vector\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The \fR\fBRange\fP< num >\fP, if index in range or *(new \fBRange< num >( 0, 0 )\fP), if out of range\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB89\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> \fBiterator\fP \fBNumberEnumeration\fP< num >::begin () const\fR [inline]\fP"
+
+.PP
+Get an iterator to the first position\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An \fRiterator\fP to the first position\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB98\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> \fBiterator\fP \fBNumberEnumeration\fP< num >::end () const\fR [inline]\fP"
+
+.PP
+Get an iterator to behind-the-last element's position\&. 
+.PP
+\fBReturns\fP
+.RS 4
+An \fRiterator\fP to behind-the-last element's position\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB104\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> bool \fBNumberEnumeration\fP< num >::is_member (const num member_num)\fR [inline]\fP"
+
+.PP
+Test, if a number is member in one of the ranges or not\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImember_num\fP The number of the type \fRnum\fP to test for\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+If the number is member of the vector or not\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB68\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<typename num  = num_default> size_t \fBNumberEnumeration\fP< num >::size () const\fR [inline]\fP"
+
+.PP
+Returns the number of currently stored ranges\&. 
+.PP
+\fBReturns\fP
+.RS 4
+The size of this vector\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB82\fP of file \fBpassenger\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

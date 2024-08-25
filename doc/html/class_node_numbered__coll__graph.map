@@ -1,0 +1,11 @@
+<map id="NodeNumbered&lt; GraphPassengerT, num &gt;" name="NodeNumbered&lt; GraphPassengerT, num &gt;">
+<area shape="rect" id="Node000001" title="A numbered and controlled node, inheriting Node&lt; GraphPassengerT &gt; and PassengerNumber&lt; num &gt;." alt="" coords="28,296,250,339"/>
+<area shape="rect" id="Node000002" href="$class_node.html" title=" " alt="" coords="5,212,241,239"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,253,138,295,133,296,125,254"/>
+<area shape="rect" id="Node000003" href="$class_passenger_number.html" title=" " alt="" coords="265,204,432,247"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="287,256,188,298,186,293,285,251"/>
+<area shape="rect" id="Node000004" href="$class_number_enumeration.html" title=" " alt="" coords="274,97,422,140"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="351,156,351,203,346,203,346,156"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="282,5,415,48"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="351,64,351,97,346,97,346,64"/>
+</map>

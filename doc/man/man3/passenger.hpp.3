@@ -1,0 +1,52 @@
+.TH "src/passenger.hpp" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/passenger.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <queue>\fP
+.br
+\fR#include <vector>\fP
+.br
+\fR#include 'action\&.hpp'\fP
+.br
+\fR#include 'graph_passenger\&.hpp'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBRange< num >\fP"
+.br
+.RI "A numeric range with a templated numeric type\&. "
+.ti -1c
+.RI "class \fBNumberEnumeration< num >\fP"
+.br
+.RI "A simple number enumeration that keeps track of ranges of member marker's enumerata number so that they can be member, allowed or unallowed on an attributed object\&. Inherits \fRstd::vector< \fBRange\fP< num > >\fP\&. "
+.ti -1c
+.RI "class \fBPassengerNumber< num >\fP"
+.br
+.RI "A controller for \fR\fBNumberEnumeration\fP\fP\&. "
+.ti -1c
+.RI "class \fBNode< GraphPassengerT >\fP"
+.br
+.RI "A simple node\&. "
+.ti -1c
+.RI "class \fBNodeNumbered< GraphPassengerT, num >\fP"
+.br
+.RI "A numbered and controlled node, inheriting \fR\fBNode\fP< GraphPassengerT >\fP and \fR\fBPassengerNumber\fP< num >\fP\&. "
+.ti -1c
+.RI "class \fBPassengerNode< GraphPassengerT, EdgeT, num >\fP"
+.br
+.RI "The passenger node that is specially for \fR\fBGraphPassengerNumber\fP\fP, inherits \fR\fBNodeNumbered\fP< GraphPassengerT, num >\fP\&. "
+.ti -1c
+.RI "class \fBPassengerNodeActional< GraphPassengerT, EdgeT, num >\fP"
+.br
+.RI "The passenger node that is specially for \fR\fBGraphPassengerNumber\fP\fP, inherits \fR\fBNodeNumbered\fP< GraphPassengerT, num >\fP\&. "
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

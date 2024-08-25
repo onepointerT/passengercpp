@@ -1,0 +1,5 @@
+<map id="GraphPassenger" name="GraphPassenger">
+<area shape="rect" id="Node000001" title="A traveller through a graph, its edges and nodes. Inherits std::string for better naming convenience." alt="" coords="5,80,124,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="25,5,104,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,48,67,80,62,80,62,48"/>
+</map>

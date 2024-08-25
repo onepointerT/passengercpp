@@ -1,0 +1,116 @@
+.TH "ActionGroupFunction< GraphPassengerT >" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ActionGroupFunction< GraphPassengerT >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <action\&.hpp>\fP
+.PP
+Inherits \fBActionFunction< GraphPassengerNumber<> >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAction\fP ()"
+.br
+.RI "The constructor of \fR\fBAction\fP\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBActionFunction< GraphPassengerNumber<> >\fP
+.in +1c
+.ti -1c
+.RI "\fBActionFunction\fP (const std::string nameof_func, \fBaction_function_t\fP func)"
+.br
+.RI "The constructor of \fBActionFunction\fP\&. "
+.ti -1c
+.RI "bool \fBrun\fP (absolverT absolver, const std::string nameof_func)"
+.br
+.RI "Execute the actional function with an absolving passenger\&. Will inform the absolvent by \fR\fBGraphPassenger::absolvedActionFunction()\fP\fP\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBregister_group_function\fP (const \fBActionGroupFunction\fP &function)"
+.br
+.RI "Register an \fR\fBActionGroupFunction\fP\fP for absolvents at the static contingent of different functions (\fRm_group_functions\fP)\&. Sets the function instead of an existing, if a function with this name is already found\&. "
+.in -1c
+.SS "Static Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "static std::vector< \fBActionGroupFunction\fP > \fBm_group_functions\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Public Attributes inherited from \fBActionFunction< GraphPassengerNumber<> >\fP
+.in +1c
+.ti -1c
+.RI "const std::string \fBfuncname\fP"
+.br
+.RI "The name of the function for similar lookups\&. "
+.in -1c
+
+Protected Attributes inherited from \fBActionFunction< GraphPassengerNumber<> >\fP
+.in +1c
+.ti -1c
+.RI "\fBaction_function_t\fP \fBm_func\fP"
+.br
+.RI "The class \fBActionFunction\fP stores one protected value of the type action_function_t for executing with the function \fRtemlate< class absolverT > \fBrun()\fP\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class GraphPassengerT = GraphPassengerNumber<>>
+.br
+class ActionGroupFunction< GraphPassengerT >"
+.PP
+Definition at line \fB134\fP of file \fBaction\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class GraphPassengerT  = GraphPassengerNumber<>> \fBActionGroupFunction\fP< GraphPassengerT >\fB::Action\fP ()\fR [inline]\fP"
+
+.PP
+The constructor of \fR\fBAction\fP\fP\&. 
+.PP
+\fBNote\fP
+.RS 4
+Does not need to be called to register functions\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB162\fP of file \fBaction\&.hpp\fP\&.
+.SS "template<class GraphPassengerT  = GraphPassengerNumber<>> static bool \fBActionGroupFunction\fP< GraphPassengerT >::register_group_function (const \fBActionGroupFunction\fP< GraphPassengerT > & function)\fR [inline]\fP, \fR [static]\fP"
+
+.PP
+Register an \fR\fBActionGroupFunction\fP\fP for absolvents at the static contingent of different functions (\fRm_group_functions\fP)\&. Sets the function instead of an existing, if a function with this name is already found\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfunction\fP The function of the type \fRaction_group_function_t\fP absolvents of action functions\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Success or not\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB145\fP of file \fBaction\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class GraphPassengerT  = GraphPassengerNumber<>> std::vector< \fBActionGroupFunction\fP > \fBActionGroupFunction\fP< GraphPassengerT >::m_group_functions\fR [static]\fP, \fR [protected]\fP"
+
+.PP
+Definition at line \fB138\fP of file \fBaction\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.

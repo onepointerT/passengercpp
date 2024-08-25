@@ -1,0 +1,268 @@
+.TH "PassengerNode< GraphPassengerT, EdgeT, num >" 3 "Version 0.1.0" "passengercpp" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PassengerNode< GraphPassengerT, EdgeT, num > \- The passenger node that is specially for \fR\fBGraphPassengerNumber\fP\fP, inherits \fR\fBNodeNumbered\fP< GraphPassengerT, num >\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <passenger\&.hpp>\fP
+.PP
+Inherits \fBNodeNumbered< GraphPassengerT, num_default >\fP\&.
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBPassengerNumber\fP< num > \fBpassengernumber_t\fP"
+.br
+.RI "The type of the controller for \fR\fBNumberEnumeration\fP< num >\fP "
+.in -1c
+
+Public Types inherited from \fBNode< GraphPassengerT >\fP
+.in +1c
+.ti -1c
+.RI "typedef GraphPassengerT \fBnode_passenger_t\fP"
+.br
+.RI "The type of the node traveller\&. "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPassengerNode\fP ()"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "\fBPassengerNode\fP (const typename \fBpassengernumber_t::numberenumeration_t\fP members)"
+.br
+.RI "Another constructor\&. "
+.ti -1c
+.RI "bool \fBadd_edge\fP (const EdgeT &new_edge)"
+.br
+.RI "Add an outgoing edge\&. "
+.ti -1c
+.RI "virtual bool \fBdepartureTo\fP (const unsigned int edge_idx)"
+.br
+.RI "Leave this node with the edge at the index \fRedge_idx\fP at the known edge's list\&. "
+.in -1c
+
+Public Member Functions inherited from \fBNodeNumbered< GraphPassengerT, num_default >\fP
+.in +1c
+.ti -1c
+.RI "\fBNodeNumbered\fP ()"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "virtual bool \fBcan_arrive\fP (const GraphPassengerT &passenger)"
+.br
+.RI "Check, if a graph traveller can arrive\&. "
+.ti -1c
+.RI "virtual bool \fBarrive\fP (const GraphPassengerT &passenger)"
+.br
+.RI "Arrive at this targeting node\&. "
+.ti -1c
+.RI "bool \fBadd_member_range\fP (const \fBnum_default\fP from, const \fBnum_default\fP to)"
+.br
+.RI "Add a \fR\fBRange\fP< num >\fP (from, to), that reflects new members, allowances or disallowances with a class inheriting from \fR\fBNumberEnumeration\fP\fP\&. "
+.in -1c
+
+Public Member Functions inherited from \fBNode< GraphPassengerT >\fP
+.in +1c
+.ti -1c
+.RI "\fBNode\fP ()"
+.br
+.RI "The constructor\&. "
+.ti -1c
+.RI "virtual GraphPassengerT & \fBpop\fP ()"
+.br
+.RI "Get the first element out of the queue and delete it inside of the queue\&. "
+.ti -1c
+.RI "virtual bool \fBdeparture\fP ()"
+.br
+.RI "Leave this node\&. Calls \fRthis->\fBpop()\fP\fP, but needs to be specialiced in inheriting class, because no edge is known here\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::vector< const EdgeT & > \fBm_edges_outgoing\fP"
+.br
+.RI "A vector with all outgoing edges, that should have a reference to the target node\&. "
+.in -1c
+
+Protected Attributes inherited from \fBNode< GraphPassengerT >\fP
+.in +1c
+.ti -1c
+.RI "std::queue< GraphPassengerT & > \fBm_arrivals\fP"
+.br
+.RI "A \fRstd::queue\fP with all graph markers that are currently at this node\&. "
+.in -1c
+
+Protected Attributes inherited from \fBPassengerNumber< num_default >\fP
+.in +1c
+.ti -1c
+.RI "\fBNumberEnumeration\fP< \fBnum_default\fP > \fBm_members\fP"
+.br
+.RI "The members that are enumerated here\&. "
+.ti -1c
+.RI "\fBnum_default\fP \fBm_members_count\fP"
+.br
+.RI "The amount of members that are in the ranges of \fRm_members\fP\&. "
+.ti -1c
+.RI "\fBnum_default\fP \fBm_members_there\fP"
+.br
+.RI "The amount of members that are here\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Types inherited from \fBPassengerNumber< num_default >\fP
+.in +1c
+.ti -1c
+.RI "typedef \fBNumberEnumeration\fP< \fBnum_default\fP > \fBnumberenumeration_t\fP"
+.br
+.RI "A \fR\fBNumberEnumeration\fP< num >\fP with the numeric type \fRnum\fP\&. "
+.ti -1c
+.RI "typedef \fBRange\fP< \fBnum_default\fP > \fBmember_t\fP"
+.br
+.RI "A \fR\fBRange\fP< num >\fP with the numeric type \fRnum\fP\&. "
+.in -1c
+
+Protected Member Functions inherited from \fBPassengerNumber< num_default >\fP
+.in +1c
+.ti -1c
+.RI "const \fBnum_default\fP \fBhighest_member_number\fP (const \fBNumberEnumeration\fP< \fBnum_default\fP > members)"
+.br
+.RI "The infimum (highest number) of a number enumeration\&. "
+.ti -1c
+.RI "bool \fBmember_range_disjunct\fP (const \fBmember_t\fP mem) const"
+.br
+.RI "Find out, if another member range is disjunct to all other ranges, that means that it is not within one of the \fR\fBRange\fP\fP of \fRm_members\fP\&. "
+.ti -1c
+.RI "bool \fBmember_ranges_disjunct\fP () const"
+.br
+.RI "Find out, if all member ranges are disjunct to all other ranges, that means that it is not within one of the \fR\fBRange\fP\fP per object of \fRm_members\fP\&. "
+.in -1c
+.in +1c
+.ti -1c
+.RI "\fBPassengerNumber\fP (const \fBNumberEnumeration\fP< \fBnum_default\fP > members=\fBNumberEnumeration\fP< \fBnum_default\fP >())"
+.br
+.RI "The constructor\&. "
+.ti -1c
+.RI "\fBPassengerNumber\fP ()"
+.br
+.RI "The constructor\&. "
+.ti -1c
+.RI "bool \fBadd_member\fP (const \fBmember_t\fP member_range)"
+.br
+.RI "Add a new member range to \fRm_members\fP\&. Only fulfills, if disjunct to the others that are already stored\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class GraphPassengerT, class EdgeT, typename num = num_default>
+.br
+class PassengerNode< GraphPassengerT, EdgeT, num >"The passenger node that is specially for \fR\fBGraphPassengerNumber\fP\fP, inherits \fR\fBNodeNumbered\fP< GraphPassengerT, num >\fP\&. 
+
+
+.PP
+\fBNote\fP
+.RS 4
+The first class with an edge as template parameter\&. Please mind, that cyclic template parameters are not possible\&. NOTE: Base classes can also be template parameters\&. 
+.RE
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIGraphPassengerT\fP A graph passenger's graph marker, an inheritor of at least \fR\fBGraphPassenger\fP\fP\&. 
+.br
+\fIEdgeT\fP The type of the edges at and of this node\&. 
+.br
+\fInum\fP The numeric type of member ranges and \fR\fBPassengerNumber\fP\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB302\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<class GraphPassengerT , class EdgeT , typename num  = num_default> \fBPassengerNumber\fP< num > \fBPassengerNode\fP< GraphPassengerT, EdgeT, num >::passengernumber_t"
+
+.PP
+The type of the controller for \fR\fBNumberEnumeration\fP< num >\fP 
+.PP
+Definition at line \fB311\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class GraphPassengerT , class EdgeT , typename num  = num_default> \fBPassengerNode\fP< GraphPassengerT, EdgeT, num >\fB::PassengerNode\fP ()\fR [inline]\fP"
+
+.PP
+Constructor\&. 
+.PP
+Definition at line \fB314\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<class GraphPassengerT , class EdgeT , typename num  = num_default> \fBPassengerNode\fP< GraphPassengerT, EdgeT, num >\fB::PassengerNode\fP (const typename \fBpassengernumber_t::numberenumeration_t\fP members)\fR [inline]\fP"
+
+.PP
+Another constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImembers\fP Define a defaulting start member ranges list here\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB320\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class GraphPassengerT , class EdgeT , typename num  = num_default> bool \fBPassengerNode\fP< GraphPassengerT, EdgeT, num >::add_edge (const EdgeT & new_edge)\fR [inline]\fP"
+
+.PP
+Add an outgoing edge\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInew_edge\fP The new edge\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True on success\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB332\fP of file \fBpassenger\&.hpp\fP\&.
+.SS "template<class GraphPassengerT , class EdgeT , typename num  = num_default> virtual bool \fBPassengerNode\fP< GraphPassengerT, EdgeT, num >::departureTo (const unsigned int edge_idx)\fR [inline]\fP, \fR [virtual]\fP"
+
+.PP
+Leave this node with the edge at the index \fRedge_idx\fP at the known edge's list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIedge_idx\fP The edge index of the edge to use for departure\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The return value of \fRthis->\fBdeparture()\fP\fP or false on no success\&. 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBPassengerNodeActional< GraphPassengerT, EdgeT, num >\fP\&.
+.PP
+Definition at line \fB347\fP of file \fBpassenger\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class GraphPassengerT , class EdgeT , typename num  = num_default> std::vector< const EdgeT& > \fBPassengerNode\fP< GraphPassengerT, EdgeT, num >::m_edges_outgoing\fR [protected]\fP"
+
+.PP
+A vector with all outgoing edges, that should have a reference to the target node\&. 
+.PP
+Definition at line \fB307\fP of file \fBpassenger\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for passengercpp from the source code\&.
