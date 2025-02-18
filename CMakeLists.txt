@@ -14,20 +14,20 @@ if( UNIX )
     add_definitions( -fpermissive )
 endif()
 
-#include_directories( lib/plutovg/include )
-#include_directories( lib/lunasvg/include )
+include_directories( lib/plutovg/include )
+include_directories( lib/lunasvg/include )
 
 #add_subdirectory( lib/plutovg )
-#add_subdirectory( lib/lunasvg )
+add_subdirectory( lib/lunasvg )
 
 include_directories( src )
 file( GLOB SRCFILES src/*.cpp )
 add_library( passengercpp STATIC ${SRCFILES} )
 
-#include_directories( src/svg )
-#file( GLOB SRCFILES_SVG src/svg/*.cpp )
-#add_library( passengersvg STATIC ${SRCFILES_SVG} )
-#target_link_libraries( passengersvg lunasvg passengercpp )
+include_directories( src/svg )
+file( GLOB SRCFILES_SVG src/svg/*.cpp )
+add_library( passengersvg STATIC ${SRCFILES_SVG} )
+target_link_libraries( passengersvg lunasvg passengercpp )
 
 set( ENABLE_DOC_PASSENGERCPP TRUE )
 if( ENABLE_DOC_PASSENGERCPP )
