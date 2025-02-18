@@ -1,6 +1,6 @@
 # passengercpp
 ### A library that is havening a passenger arriving and departing node graph with and without actions on edges
-#### v0.1.0
+#### v0.2.1
 
 This small library is implemented to handle concurrent consent arbitrary passengers of nodes and solves the following questions to source code and graph marker member departure behaviour:
 

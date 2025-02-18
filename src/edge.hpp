@@ -4,6 +4,7 @@
 #include "graph_passenger.hpp"
 #include "passenger.hpp"
 
+namespace passenger {
 
 /// @brief A simple edge with all basic elements so that it can be inherited from
 /// @tparam GraphPassengerT The graph traveler, a subclass of `GraphPassenger`
@@ -177,3 +178,5 @@ public:
         return false;
     }
 };
+
+} // namespace passenger

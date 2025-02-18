@@ -8,6 +8,9 @@
 #include "config.hpp"
 
 
+
+namespace passenger {
+
 /// @brief A parameter named tuple with (param_name, param_value).
 typedef typename std::pair< std::string, std::string > parameter_pair_t;
 /// @brief A list of parameter named tuples of the type `parameter_pair_t`
@@ -25,6 +28,8 @@ protected:
     parameter_list_t m_parameter_pairs;
 
 public:
+    /// @brief The constructor.
+    GraphPassenger();
     /// @brief The constructor.
     /// @param name The name or an number as `std::string` that identifies and difers this `GraphPassenger` from others.
     GraphPassenger( const std::string name );
@@ -61,7 +66,7 @@ public:
     /// @brief The constructor. Please specialize for another counting of next current numbers, e.ex. for `float`.
     /// @param member_num The member enumerata for this `GraphPassenger`
     GraphPassengerNumber( const num member_num = ++GraphPassengerNumber::current_member_num )
-        :   GraphPassenger( "" )
+        :   GraphPassenger()
         ,   m_num( member_num )
     {}
 
@@ -79,3 +84,5 @@ public:
         return m_num;
     }
 };
+
+} // namespace passenger

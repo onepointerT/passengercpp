@@ -8,6 +8,7 @@
 #include "graph_passenger.hpp"
 
 
+namespace passenger {
 
 /// @brief A numeric range with a templated numeric type.
 /// @tparam num The numeric type of the range's number.
@@ -202,6 +203,8 @@ public:
 /// @tparam GraphPassengerT A graph passenger's graph marker, an inheritor of at least `GraphPassenger`.
 template< class GraphPassengerT = GraphPassenger >
 class Node {
+    static unsigned int next_number = 0;
+
 protected:
     /// @brief A `std::queue` with all graph markers that are currently at this node.
     std::queue< GraphPassengerT& > m_arrivals;
@@ -210,9 +213,17 @@ public:
     /// @brief The type of the node traveller.
     typedef GraphPassengerT node_passenger_t;
 
+    /// @brief The number of this node
+    const unsigned int num_node;
+
+    /// @brief The name of this node
+    const std::string name;
+
     /// @brief The constructor.
-    Node()
+    Node( const char* node_name = "" )
         :   m_arrivals()
+        ,   num_node( ++next_number )
+        ,   name( node_name )
     {}
 
     /// @brief Arrive with one traveller's marker at this node.
@@ -454,3 +465,5 @@ public:
         return missed;
     }
 };
+
+} // namespace passenger

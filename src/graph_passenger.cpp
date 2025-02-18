@@ -2,6 +2,13 @@
 #include "graph_passenger.hpp"
 
 
+namespace passenger {
+
+
+GraphPassenger::GraphPassenger()
+    :   std::string()
+{}
+
 GraphPassenger::GraphPassenger( const std::string name )
     :   std::string( name )
 {}
@@ -48,3 +55,5 @@ bool GraphPassenger::absolvedActionFunction( const parameter_list_t parameters )
 
 GraphPassengerNumber< num_non_default >;
 GraphPassengerNumber< num_default >;
+
+} // namespace passenger

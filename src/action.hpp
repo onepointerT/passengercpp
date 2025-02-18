@@ -9,6 +9,7 @@
 #include <vector>
 #include <utility>
 
+namespace passenger {
 
 extern "C" {
 /// @brief An action_function_t defines the type a of method for an action needs to have and the types for parameters and return type.
@@ -215,3 +216,5 @@ public:
 /// @tparam GraphPassengerT The type of absolvent, a passenger in the graph.
 template<class GraphPassengerT> std::vector<ActionFunction> ActionPassengerGroup<GraphPassengerT>::m_group_functions
     = std::vector<ActionGroupFunction<GraphPassengerT>>();
+
+} // namespace passenger

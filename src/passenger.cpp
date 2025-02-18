@@ -4,6 +4,8 @@
 #include "edge.hpp"
 
 
+namespace passenger {
+
 Range<>;
 Range< num_non_default >;
 NumberEnumeration<>;
@@ -19,3 +21,5 @@ PassengerNode< GraphPassenger, EdgeSimple<> >;
 PassengerNode< GraphPassenger, EdgeSimple<>, num_non_default >;
 PassengerNodeActional< GraphPassenger, EdgeSimple<>, num_default >;
 PassengerNodeActional< GraphPassengerNumber<>, EdgeSimple<>, num_default >;
+
+} // namespace passenger

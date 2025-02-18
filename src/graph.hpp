@@ -6,6 +6,9 @@
 #include "passenger.hpp"
 
 
+namespace passenger {
+
+
 /// @brief The simple graph's class. Stores all nodes of the type `NodeT*` and points also to a single start and a single end node.
 /// @tparam NodeT The nodes that appear inside of the graph.
 template< class NodeT >
@@ -59,3 +62,5 @@ public:
         this->get_start()->arrive( passenger );
     }
 };
+
+} // namespace passenger
