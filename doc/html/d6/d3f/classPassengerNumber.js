@@ -2,7 +2,7 @@ var classPassengerNumber =
 [
     [ "member_t", "d6/d3f/classPassengerNumber.html#a4ecb124fc92644d044fe950173738281", null ],
     [ "numberenumeration_t", "d6/d3f/classPassengerNumber.html#a39b173cd37ce0c97386e36dc21336628", null ],
-    [ "PassengerNumber", "d6/d3f/classPassengerNumber.html#a72a093d4b18bd5a9848627b69b39764a", null ],
+    [ "PassengerNumber", "d6/d3f/classPassengerNumber.html#a86d8d67762234b606d3e558e7e68aae9", null ],
     [ "PassengerNumber", "d6/d3f/classPassengerNumber.html#ac5b082078eb3c964054a38cc984c4fcb", null ],
     [ "add_member", "d6/d3f/classPassengerNumber.html#aca5190d5cb6a22b97937c17a3e23992b", null ],
     [ "highest_member_number", "d6/d3f/classPassengerNumber.html#a777ff7ac5f681028408e26c1b428f79c", null ],

@@ -1,15 +1,15 @@
 <map id="PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;" name="PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="857,47,1060,101"/>
-<area shape="rect" id="Node000002" href="$d8/da6/classPassengerNode.html" title=" " alt="" coords="567,22,809,62"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="823,55,857,59,857,65,823,61"/>
-<area shape="rect" id="Node000003" href="$dc/deb/classNodeNumbered.html" title=" " alt="" coords="252,29,519,55"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="532,39,566,39,566,45,532,45"/>
-<area shape="rect" id="Node000004" href="$df/dd0/classNode.html" title=" " alt="" coords="5,5,204,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="218,25,252,28,252,33,217,30"/>
-<area shape="rect" id="Node000005" href="$d6/d3f/classPassengerNumber.html" title=" " alt="" coords="5,55,204,80"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="217,55,252,51,252,57,218,60"/>
-<area shape="rect" id="Node000006" href="$d5/d95/classActionPassengerGroup.html" title=" " alt="" coords="604,86,772,126"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="785,92,857,83,857,89,786,97"/>
-<area shape="rect" id="Node000007" href="$db/d09/classAction.html" title=" " alt="" coords="282,93,489,119"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="503,103,604,103,604,109,503,109"/>
+<area shape="rect" id="Node000001" title="The passenger node that is specially for GraphPassengerNumber, inherits NodeNumbered&lt; GraphPassengerT..." alt="" coords="775,51,962,104"/>
+<area shape="rect" id="Node000002" href="$d8/da6/classPassengerNode.html" title=" " alt="" coords="504,26,727,65"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="743,59,775,63,774,68,743,64"/>
+<area shape="rect" id="Node000003" href="$dc/deb/classNodeNumbered.html" title=" " alt="" coords="235,26,456,65"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="471,43,504,43,504,48,471,48"/>
+<area shape="rect" id="Node000004" href="$df/dd0/classNode.html" title=" " alt="" coords="5,5,187,30"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="202,27,234,31,234,36,202,32"/>
+<area shape="rect" id="Node000005" href="$d6/d3f/classPassengerNumber.html" title=" " alt="" coords="13,54,179,93"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="195,60,234,55,235,61,195,65"/>
+<area shape="rect" id="Node000006" href="$d5/d95/classActionPassengerGroup.html" title=" " alt="" coords="538,89,693,128"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="708,94,774,86,775,92,709,100"/>
+<area shape="rect" id="Node000007" href="$db/d09/classAction.html" title=" " alt="" coords="252,96,439,121"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="455,106,538,106,538,111,455,111"/>
 </map>

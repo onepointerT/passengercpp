@@ -1,5 +1,5 @@
 <map id="ActionPassengerGroup&lt; GraphPassengerT &gt;" name="ActionPassengerGroup&lt; GraphPassengerT &gt;">
-<area shape="rect" id="Node000001" title="A specialization of Action with functions for grouped graph passenger absolvents." alt="" coords="25,79,193,119"/>
-<area shape="rect" id="Node000002" href="$db/d09/classAction.html" title="An action that can be performed and where named functionals can be absolved." alt="" coords="5,5,212,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,44,111,79,106,79,106,44"/>
+<area shape="rect" id="Node000001" title="A specialization of Action with functions for grouped graph passenger absolvents." alt="" coords="48,78,204,117"/>
+<area shape="rect" id="Node000002" href="$db/d09/classAction.html" title=" " alt="" coords="5,5,247,30"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,46,129,77,123,77,123,46"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="GraphPassengerNumber&lt; num &gt;" name="GraphPassengerNumber&lt; num &gt;">
+<area shape="rect" id="Node000001" title="A specialization of GraphPassenger. Can be used to numerata the graph passengers." alt="" coords="5,151,170,189"/>
+<area shape="rect" id="Node000002" href="$d2/ddb/classGraphPassenger.html" title="A traveller through a graph, its edges and nodes. Inherits std::string for better naming convenience." alt="" coords="28,78,147,103"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,118,90,150,85,150,85,118"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="48,5,127,30"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,46,90,78,85,78,85,46"/>
+</map>

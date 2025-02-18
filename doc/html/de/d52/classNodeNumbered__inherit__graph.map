@@ -1,7 +1,7 @@
 <map id="NodeNumbered&lt; GraphPassengerT, num &gt;" name="NodeNumbered&lt; GraphPassengerT, num &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="93,79,337,119"/>
-<area shape="rect" id="Node000002" href="$df/dd0/classNode.html" title=" " alt="" coords="5,5,204,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,36,190,76,187,81,131,41"/>
-<area shape="rect" id="Node000003" href="$d6/d3f/classPassengerNumber.html" title=" " alt="" coords="228,5,427,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="301,41,244,81,241,76,298,36"/>
+<area shape="rect" id="Node000001" title="A numbered and controlled node, inheriting Node&lt; GraphPassengerT &gt; and PassengerNumber&lt; num &gt;." alt="" coords="124,92,346,131"/>
+<area shape="rect" id="Node000002" href="$df/dd0/classNode.html" title=" " alt="" coords="5,12,241,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,44,212,89,209,94,149,49"/>
+<area shape="rect" id="Node000003" href="$d6/d3f/classPassengerNumber.html" title=" " alt="" coords="265,5,432,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="313,56,262,94,258,89,309,52"/>
 </map>

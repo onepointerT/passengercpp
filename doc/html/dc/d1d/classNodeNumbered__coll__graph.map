@@ -1,11 +1,11 @@
 <map id="NodeNumbered&lt; GraphPassengerT, num &gt;" name="NodeNumbered&lt; GraphPassengerT, num &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,272,249,312"/>
-<area shape="rect" id="Node000002" href="$df/dd0/classNode.html" title=" " alt="" coords="12,197,211,223"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,235,126,271,121,272,114,236"/>
-<area shape="rect" id="Node000003" href="$d6/d3f/classPassengerNumber.html" title=" " alt="" coords="235,197,433,223"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="293,230,177,274,175,269,291,225"/>
-<area shape="rect" id="Node000004" href="$df/d4a/classNumberEnumeration.html" title=" " alt="" coords="250,95,418,135"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="337,149,337,197,331,197,331,149"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="257,5,411,45"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="337,59,337,95,331,95,331,59"/>
+<area shape="rect" id="Node000001" title="A numbered and controlled node, inheriting Node&lt; GraphPassengerT &gt; and PassengerNumber&lt; num &gt;." alt="" coords="28,282,250,321"/>
+<area shape="rect" id="Node000002" href="$df/dd0/classNode.html" title=" " alt="" coords="5,201,241,226"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,241,138,281,133,282,125,242"/>
+<area shape="rect" id="Node000003" href="$d6/d3f/classPassengerNumber.html" title=" " alt="" coords="265,194,432,233"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="290,241,186,284,184,279,288,236"/>
+<area shape="rect" id="Node000004" href="$df/d4a/classNumberEnumeration.html" title=" " alt="" coords="274,93,422,132"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="351,147,351,194,346,194,346,147"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="283,5,414,44"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="351,60,351,93,346,93,346,60"/>
 </map>

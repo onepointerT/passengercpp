@@ -1,9 +1,5 @@
 <map id="ActionGroupFunction&lt; GraphPassengerT &gt;" name="ActionGroupFunction&lt; GraphPassengerT &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="42,257,207,297"/>
-<area shape="rect" id="Node000002" href="$d5/def/classActionFunction.html" title="An Action function a container for a function, that is to be run on getting, need to absolve and coin..." alt="" coords="5,168,244,208"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,222,127,257,122,257,122,222"/>
-<area shape="rect" id="Node000003" href="$d2/ddb/classGraphPassenger.html" title=" " alt="" coords="61,80,188,105"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="127,119,127,168,122,168,122,119"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="81,5,168,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="127,45,127,80,122,80,122,45"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="51,78,201,117"/>
+<area shape="rect" id="Node000002" href="$db/d09/classAction.html" title=" " alt="" coords="5,5,247,30"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,46,129,77,123,77,123,46"/>
 </map>

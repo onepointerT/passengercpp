@@ -1,13 +1,13 @@
 <map id="PassengerNode&lt; GraphPassengerT, EdgeT, num &gt;" name="PassengerNode&lt; GraphPassengerT, EdgeT, num &gt;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="17,347,260,387"/>
-<area shape="rect" id="Node000002" href="$dc/deb/classNodeNumbered.html" title=" " alt="" coords="5,272,272,297"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,311,141,347,136,347,136,311"/>
-<area shape="rect" id="Node000003" href="$df/dd0/classNode.html" title=" " alt="" coords="23,197,222,223"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,236,139,271,133,272,126,237"/>
-<area shape="rect" id="Node000004" href="$d6/d3f/classPassengerNumber.html" title=" " alt="" coords="246,197,445,223"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="300,230,172,274,170,269,299,225"/>
-<area shape="rect" id="Node000005" href="$df/d4a/classNumberEnumeration.html" title=" " alt="" coords="261,95,429,135"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="348,149,348,197,343,197,343,149"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="269,5,422,45"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="348,59,348,95,343,95,343,59"/>
+<area shape="rect" id="Node000001" title="The passenger node that is specially for GraphPassengerNumber, inherits NodeNumbered&lt; GraphPassengerT..." alt="" coords="42,370,265,409"/>
+<area shape="rect" id="Node000002" href="$dc/deb/classNodeNumbered.html" title=" " alt="" coords="43,282,264,321"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,336,156,370,151,370,151,336"/>
+<area shape="rect" id="Node000003" href="$df/dd0/classNode.html" title=" " alt="" coords="5,201,187,226"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,237,143,280,139,283,110,240"/>
+<area shape="rect" id="Node000004" href="$d6/d3f/classPassengerNumber.html" title=" " alt="" coords="210,194,376,233"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="252,243,185,284,182,279,249,239"/>
+<area shape="rect" id="Node000005" href="$df/d4a/classNumberEnumeration.html" title=" " alt="" coords="219,93,368,132"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="296,147,296,194,291,194,291,147"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="228,5,359,44"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="296,60,296,93,291,93,291,60"/>
 </map>
