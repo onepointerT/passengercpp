@@ -1,0 +1,4 @@
+.text { font-size: 10; font-palette: #000000; font-family: system-ui; font: bold; font-optical-sizing: auto; font-display: block; text-align: center; text-anchor: middle; }
+.passenger { fill: #000000; stroke: #00ffff; font-palette: #0000bb; font-size: 5; }
+.edge { fill: #000000; stroke: #ff0000; font-palette: #ff00; }
+.node { fill: #00ffff; stroke: #fff000; font-palette: #ff00; }

@@ -1,0 +1,12 @@
+[submodule "lib/cairo4cpp"]
+	path = lib/cairo4cpp
+	url = https://github.com/ferhatgec/cairo4cpp.git
+[submodule "lib/cairopp"]
+	path = lib/cairopp
+	url = https://github.com/jube/cairopp.git
+[submodule "lib/lunasvg"]
+	path = lib/lunasvg
+	url = https://github.com/sammycage/lunasvg.git
+[submodule "lib/plutovg"]
+	path = lib/plutovg
+	url = https://github.com/sammycage/plutovg.git
