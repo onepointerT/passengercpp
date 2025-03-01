@@ -1,4 +1,4 @@
 var graph_8hpp =
 [
-    [ "Graph< NodeT >", "d2/d62/classGraph.html", "d2/d62/classGraph" ]
+    [ "passenger::Graph< NodeT >", "d0/d54/classpassenger_1_1Graph.html", "d0/d54/classpassenger_1_1Graph" ]
 ];

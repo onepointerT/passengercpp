@@ -1,8 +1,8 @@
 var action_8cpp =
 [
-    [ "Action< GraphPassenger >", "d1/d83/action_8cpp.html#a15076c73c93c98580024b5a55f5255a6", null ],
-    [ "Action< GraphPassengerNumber< num_non_default > >", "d1/d83/action_8cpp.html#a7aa7b4aeb2492badf5e9809283463547", null ],
-    [ "Action< GraphPassengerNumber<> >", "d1/d83/action_8cpp.html#ab486488f446ca8c09e3e9815ca0eece8", null ],
-    [ "ActionPassengerGroup< GraphPassengerNumber< num_non_default > >", "d1/d83/action_8cpp.html#aec3682bf98780ee27fa6c3d301d40143", null ],
-    [ "ActionPassengerGroup< GraphPassengerNumber<> >", "d1/d83/action_8cpp.html#abf1e8667122354e2d68fed00f38cd223", null ]
+    [ "passenger::Action< GraphPassenger >", "de/d12/namespacepassenger.html#aa1b4331622dff976abcd29e42e8e4a55", null ],
+    [ "passenger::Action< GraphPassengerNumber< num_non_default > >", "de/d12/namespacepassenger.html#a19b1742bd894da241b4ee780cfdee445", null ],
+    [ "passenger::Action< GraphPassengerNumber<> >", "de/d12/namespacepassenger.html#ad116c2fc08f3f7b2e1ada8ee3396a73a", null ],
+    [ "passenger::ActionPassengerGroup< GraphPassengerNumber< num_non_default > >", "de/d12/namespacepassenger.html#a7511478ddd9a0e97f96a8ba7a66daf81", null ],
+    [ "passenger::ActionPassengerGroup< GraphPassengerNumber<> >", "de/d12/namespacepassenger.html#a1e5b8db13409e6ce56c3f54a2091d1ee", null ]
 ];

@@ -1,0 +1,5 @@
+<map id="OutgoingMap" name="OutgoingMap">
+<area shape="rect" id="Node000001" title="A simple map that admires the edges to their nodes that they are heading to." alt="" coords="24,92,122,117"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,141,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,60,76,91,70,91,70,60"/>
+</map>

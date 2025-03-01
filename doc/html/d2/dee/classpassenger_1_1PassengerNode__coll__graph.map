@@ -1,0 +1,13 @@
+<map id="passenger::PassengerNode&lt; GraphPassengerT, EdgeT, num &gt;" name="passenger::PassengerNode&lt; GraphPassengerT, EdgeT, num &gt;">
+<area shape="rect" id="Node000001" title="The passenger node that is specially for GraphPassengerNumber, inherits NodeNumbered&lt; GraphPassengerT..." alt="" coords="32,384,260,423"/>
+<area shape="rect" id="Node000002" href="$d7/d84/classpassenger_1_1NodeNumbered.html" title=" " alt="" coords="56,282,236,335"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,350,149,384,143,384,143,350"/>
+<area shape="rect" id="Node000003" href="$d7/d1e/classpassenger_1_1Node.html" title=" " alt="" coords="5,201,255,226"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="137,240,144,281,139,282,132,241"/>
+<area shape="rect" id="Node000004" href="$d4/dd5/classpassenger_1_1PassengerNumber.html" title=" " alt="" coords="279,194,477,233"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="319,241,211,284,209,279,317,236"/>
+<area shape="rect" id="Node000005" href="$d9/da3/classpassenger_1_1NumberEnumeration.html" title=" " alt="" coords="274,93,482,132"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="381,147,381,194,375,194,375,147"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="312,5,444,44"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="381,60,381,93,375,93,375,60"/>
+</map>

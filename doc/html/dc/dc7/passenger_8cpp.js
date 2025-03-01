@@ -1,18 +1,18 @@
 var passenger_8cpp =
 [
-    [ "Node", "dc/dc7/passenger_8cpp.html#aed91756449328e2c454e53e9c5e53936", null ],
-    [ "Node< GraphPassengerNumber< num_non_default > >", "dc/dc7/passenger_8cpp.html#a8c3521b8c2ed09f0ecd56daec66184d3", null ],
-    [ "Node< GraphPassengerNumber<> >", "dc/dc7/passenger_8cpp.html#ad2dbffe8d15d49f8df056e7ba195e8cc", null ],
-    [ "NodeNumbered< GraphPassengerNumber< num_non_default >, num_non_default >", "dc/dc7/passenger_8cpp.html#ac91905e17a7471e94988193b5c24cf73", null ],
-    [ "NodeNumbered< GraphPassengerNumber<> >", "dc/dc7/passenger_8cpp.html#a83817f32e72e029fd5b79c074b03b979", null ],
-    [ "NumberEnumeration", "dc/dc7/passenger_8cpp.html#ac712f5ff62e562ddd32fff865bd11e85", null ],
-    [ "NumberEnumeration< num_non_default >", "dc/dc7/passenger_8cpp.html#ad9a1ef037d632d57643a80c2b27bbc9f", null ],
-    [ "PassengerNode< GraphPassenger, EdgeSimple<> >", "dc/dc7/passenger_8cpp.html#af39b42d144b850819a6a438d245c6d5d", null ],
-    [ "PassengerNode< GraphPassenger, EdgeSimple<>, num_non_default >", "dc/dc7/passenger_8cpp.html#a38151d70670989a91e42d460fb99651c", null ],
-    [ "PassengerNodeActional< GraphPassenger, EdgeSimple<>, num_default >", "dc/dc7/passenger_8cpp.html#aae1905bc0875e9f96d24f601a27a1dd8", null ],
-    [ "PassengerNodeActional< GraphPassengerNumber<>, EdgeSimple<>, num_default >", "dc/dc7/passenger_8cpp.html#a5c4cb1ab449c7e50a4319e16268e3d40", null ],
-    [ "PassengerNumber", "dc/dc7/passenger_8cpp.html#a58de1c2a350612bb40aa14b11529a045", null ],
-    [ "PassengerNumber< num_non_default >", "dc/dc7/passenger_8cpp.html#a196fb64db835169a6debeee03d1174da", null ],
-    [ "Range", "dc/dc7/passenger_8cpp.html#a1b00d070baaf3fae8b605e1b7c578c11", null ],
-    [ "Range< num_non_default >", "dc/dc7/passenger_8cpp.html#a3e9a9eb79366bcbcaf7516b363bd0c7c", null ]
+    [ "passenger::Node", "de/d12/namespacepassenger.html#aa0538a9b8054c26850876eeb62dd8443", null ],
+    [ "passenger::Node< GraphPassengerNumber< num_non_default > >", "de/d12/namespacepassenger.html#a66cc00e8036fa1890ea0f9e7490bd7d7", null ],
+    [ "passenger::Node< GraphPassengerNumber<> >", "de/d12/namespacepassenger.html#ae2492a480f44ae8f3edb62820f3e4b7b", null ],
+    [ "passenger::NodeNumbered< GraphPassengerNumber< num_non_default >, num_non_default >", "de/d12/namespacepassenger.html#a45f0a5b01158eea3576844cbc6c1b727", null ],
+    [ "passenger::NodeNumbered< GraphPassengerNumber<> >", "de/d12/namespacepassenger.html#a5af875fa084fd121d84f0514d58eddd1", null ],
+    [ "passenger::NumberEnumeration", "de/d12/namespacepassenger.html#a642d085375034f0cb25ac46c0a5f8755", null ],
+    [ "passenger::NumberEnumeration< num_non_default >", "de/d12/namespacepassenger.html#a52ea0335724d8963183d8f139c326ec8", null ],
+    [ "passenger::PassengerNode< GraphPassenger, EdgeSimple<> >", "de/d12/namespacepassenger.html#a2aeed5c5828851074f010452529d52f5", null ],
+    [ "passenger::PassengerNode< GraphPassenger, EdgeSimple<>, num_non_default >", "de/d12/namespacepassenger.html#a49e572e219d71bbb0eaace9dccddc632", null ],
+    [ "passenger::PassengerNodeActional< GraphPassenger, EdgeSimple<>, num_default >", "de/d12/namespacepassenger.html#a4c570c1a17cd65d1db8686b0c7f3ef1c", null ],
+    [ "passenger::PassengerNodeActional< GraphPassengerNumber<>, EdgeSimple<>, num_default >", "de/d12/namespacepassenger.html#a7749a3bb22a64fb34ff881c8d45ea1e5", null ],
+    [ "passenger::PassengerNumber", "de/d12/namespacepassenger.html#af545250d721a74c89d8ab410a7b78db2", null ],
+    [ "passenger::PassengerNumber< num_non_default >", "de/d12/namespacepassenger.html#a4ff5804ea00d3508737b4573666ced4c", null ],
+    [ "passenger::Range", "de/d12/namespacepassenger.html#ae2374dfbcc4149013499cf022ea31afc", null ],
+    [ "passenger::Range< num_non_default >", "de/d12/namespacepassenger.html#ae4f8eabbe91c0d0d345140e02b47bdaf", null ]
 ];

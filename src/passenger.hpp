@@ -203,7 +203,7 @@ public:
 /// @tparam GraphPassengerT A graph passenger's graph marker, an inheritor of at least `GraphPassenger`.
 template< class GraphPassengerT = GraphPassenger >
 class Node {
-    static unsigned int next_number = 0;
+    static unsigned int next_number;
 
 protected:
     /// @brief A `std::queue` with all graph markers that are currently at this node.
@@ -258,6 +258,10 @@ public:
         return false;
     }
 };
+
+
+template< class GraphPassengerT >
+unsigned int Node< GraphPassengerT >::next_number = 0;
 
 
 /// @brief A numbered and controlled node, inheriting `Node< GraphPassengerT >` and `PassengerNumber< num >`.

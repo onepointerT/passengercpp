@@ -1,0 +1,11 @@
+<map id="passenger::Table&lt; CellT, num &gt;" name="passenger::Table&lt; CellT, num &gt;">
+<area shape="rect" id="Node000001" title="A classic table with indices on rows and columns, that can save an object in its cells." alt="" coords="244,37,410,76"/>
+<area shape="rect" id="Node000003" href="$d3/dd6/classpassenger_1_1VariateTable.html" title=" " alt="" coords="458,37,633,76"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="426,54,458,54,458,59,426,59"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,30,196,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,54,243,54,243,59,211,59"/>
+<area shape="rect" id="Node000004" href="$df/d22/classpassenger_1_1GraphTable.html" title=" " alt="" coords="681,5,868,44"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="648,40,681,35,681,40,649,45"/>
+<area shape="rect" id="Node000005" href="$df/d22/classpassenger_1_1GraphTable.html" title="A graph that is represented with an additional table for e.g. search and way alghorithms." alt="" coords="681,68,868,107"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="649,68,681,72,681,77,648,73"/>
+</map>

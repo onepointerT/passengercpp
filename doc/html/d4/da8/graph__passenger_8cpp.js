@@ -1,5 +1,5 @@
 var graph__passenger_8cpp =
 [
-    [ "GraphPassengerNumber< num_default >", "d4/da8/graph__passenger_8cpp.html#a3c4b7032c097ae4d29ac52ff27da9572", null ],
-    [ "GraphPassengerNumber< num_non_default >", "d4/da8/graph__passenger_8cpp.html#a5539cf1d0d3d916bbd117602d6b57c52", null ]
+    [ "passenger::GraphPassengerNumber< num_default >", "de/d12/namespacepassenger.html#a9ec679aaa0a67c75c49f91560cc78379", null ],
+    [ "passenger::GraphPassengerNumber< num_non_default >", "de/d12/namespacepassenger.html#adaeda994d7022b013b2fc66c5c409a9d", null ]
 ];

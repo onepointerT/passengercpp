@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['highest_5fmember_5fnumber_0',['highest_member_number',['../d6/d3f/classPassengerNumber.html#a777ff7ac5f681028408e26c1b428f79c',1,'PassengerNumber']]]
+  ['highest_5fmember_5fnumber_0',['highest_member_number',['../d4/dd5/classpassenger_1_1PassengerNumber.html#a26fe74756336631852318f0d018a5891',1,'passenger::PassengerNumber']]]
 ];

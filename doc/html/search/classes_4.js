@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['passengernode_0',['PassengerNode',['../d8/da6/classPassengerNode.html',1,'']]],
-  ['passengernode_3c_20graphpassengert_2c_20edget_2c_20num_5fdefault_20_3e_1',['PassengerNode&lt; GraphPassengerT, EdgeT, num_default &gt;',['../d8/da6/classPassengerNode.html',1,'']]],
-  ['passengernodeactional_2',['PassengerNodeActional',['../da/da9/classPassengerNodeActional.html',1,'']]],
-  ['passengernumber_3',['PassengerNumber',['../d6/d3f/classPassengerNumber.html',1,'']]],
-  ['passengernumber_3c_20num_20_3e_4',['PassengerNumber&lt; num &gt;',['../d6/d3f/classPassengerNumber.html',1,'']]],
-  ['passengernumber_3c_20num_5fdefault_20_3e_5',['PassengerNumber&lt; num_default &gt;',['../d6/d3f/classPassengerNumber.html',1,'']]]
+  ['leaf_0',['Leaf',['../dd/dd6/classpassenger_1_1Tree_1_1Leaf.html',1,'passenger::Tree']]],
+  ['leaf_3c_20leaft_2c_20contentt_20_3e_1',['Leaf&lt; LeafT, ContentT &gt;',['../dd/dd6/classpassenger_1_1Tree_1_1Leaf.html',1,'passenger::Tree']]]
 ];

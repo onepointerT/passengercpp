@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">passengercpp<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">passengercpp<span id="projectnumber">&#160;0.2.1</span>
    </div>
    <div id="projectbrief">A library that is havening a passenger arriving and departing node graph with and without actions on edges</div>
   </td>
@@ -98,13 +98,31 @@ $(function(){initNavTree('functions_type.html',''); initResizable(true); });
 
 <div class="contents">
 <div class="textblock">Here is a list of all typedefs with links to the classes they belong to:</div><ul>
-<li>iterator&#160;:&#160;<a class="el" href="df/d4a/classNumberEnumeration.html#ad407b57057f3fe791e5e8dc7f2fa07b6">NumberEnumeration&lt; num &gt;</a></li>
-<li>member_t&#160;:&#160;<a class="el" href="d6/d3f/classPassengerNumber.html#a4ecb124fc92644d044fe950173738281">PassengerNumber&lt; num &gt;</a></li>
-<li>node_passenger_t&#160;:&#160;<a class="el" href="df/dd0/classNode.html#a642bbb84839c07723ba06616db2468d7">Node&lt; GraphPassengerT &gt;</a></li>
-<li>numberenumeration_t&#160;:&#160;<a class="el" href="d6/d3f/classPassengerNumber.html#a39b173cd37ce0c97386e36dc21336628">PassengerNumber&lt; num &gt;</a></li>
-<li>passenger_group_t&#160;:&#160;<a class="el" href="d5/d95/classActionPassengerGroup.html#a42ef634cec90b4fc96d2e95282ad9e19">ActionPassengerGroup&lt; GraphPassengerT &gt;</a>, <a class="el" href="da/da9/classPassengerNodeActional.html#a67a624cd0c0937ab554cc55886acb953">PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;</a></li>
-<li>passengernumber_t&#160;:&#160;<a class="el" href="d8/da6/classPassengerNode.html#adb3800efde2628cfe7c3a8829c56a457">PassengerNode&lt; GraphPassengerT, EdgeT, num &gt;</a>, <a class="el" href="da/da9/classPassengerNodeActional.html#ab95ff9384a8cca319e41cd9c5b46aa30">PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;</a></li>
-<li>vector_t&#160;:&#160;<a class="el" href="df/d4a/classNumberEnumeration.html#a1785ec89ff5bb197f819c9ef5672d609">NumberEnumeration&lt; num &gt;</a></li>
+<li>cell_content_t&#160;:&#160;<a class="el" href="d3/dd6/classpassenger_1_1VariateTable.html#a34ad0eee411587f925146ffe37bbf5de">passenger::VariateTable&lt; ColT, RowT, CellT, num &gt;</a></li>
+<li>cell_t&#160;:&#160;<a class="el" href="da/d67/classpassenger_1_1Table.html#a75dacae60e77d4f2d451164d88c4422a">passenger::Table&lt; CellT, num &gt;</a></li>
+<li>col_content_t&#160;:&#160;<a class="el" href="d3/dd6/classpassenger_1_1VariateTable.html#a1f86eaf2d5caeddd34f72e9cdcc515a3">passenger::VariateTable&lt; ColT, RowT, CellT, num &gt;</a></li>
+<li>col_t&#160;:&#160;<a class="el" href="da/d67/classpassenger_1_1Table.html#a99d10c6ef1bf80b73e7feca2642650f4">passenger::Table&lt; CellT, num &gt;</a></li>
+<li>edge_route_t&#160;:&#160;<a class="el" href="df/d22/classpassenger_1_1GraphTable.html#ab8470b5baddf30d56c606e0ae349cd33">passenger::GraphTable&lt; GT, NodeT, EdgeT, num &gt;</a></li>
+<li>edge_t&#160;:&#160;<a class="el" href="df/d22/classpassenger_1_1GraphTable.html#abf474b7c56e86022e5d3ea73419bc581">passenger::GraphTable&lt; GT, NodeT, EdgeT, num &gt;</a></li>
+<li>graph_t&#160;:&#160;<a class="el" href="df/d22/classpassenger_1_1GraphTable.html#a7f471ac6266999810b21b72ad23f2fea">passenger::GraphTable&lt; GT, NodeT, EdgeT, num &gt;</a></li>
+<li>iterator&#160;:&#160;<a class="el" href="d9/da3/classpassenger_1_1NumberEnumeration.html#a497533e452d504c6b47e9f5662bcd97f">passenger::NumberEnumeration&lt; num &gt;</a></li>
+<li>leaf_iterator&#160;:&#160;<a class="el" href="d7/d8f/classpassenger_1_1Tree.html#ab2a4868f316d01ab4350aab3e6c6112a">passenger::Tree&lt; ContentT, LeafT &gt;</a></li>
+<li>leaf_t&#160;:&#160;<a class="el" href="d7/d8f/classpassenger_1_1Tree.html#abf79f3217323d2c3c5bc65938a2e6e04">passenger::Tree&lt; ContentT, LeafT &gt;</a></li>
+<li>member_t&#160;:&#160;<a class="el" href="d4/dd5/classpassenger_1_1PassengerNumber.html#a514b856865e9164644d6915d0a43a80d">passenger::PassengerNumber&lt; num &gt;</a></li>
+<li>node_iterator&#160;:&#160;<a class="el" href="d7/d8f/classpassenger_1_1Tree.html#a3d094fe45c24bbb5e10bdaee5273e980">passenger::Tree&lt; ContentT, LeafT &gt;</a></li>
+<li>node_passenger_t&#160;:&#160;<a class="el" href="d7/d1e/classpassenger_1_1Node.html#aa539f2ca31b6f36f0e41014479f92396">passenger::Node&lt; GraphPassengerT &gt;</a></li>
+<li>node_route_t&#160;:&#160;<a class="el" href="df/d22/classpassenger_1_1GraphTable.html#a1f3d86fd66e8a6462caced29c6d2ece6">passenger::GraphTable&lt; GT, NodeT, EdgeT, num &gt;</a></li>
+<li>node_t&#160;:&#160;<a class="el" href="df/d22/classpassenger_1_1GraphTable.html#aff2fc2e9eead2bbb50928d29ac4e98dd">passenger::GraphTable&lt; GT, NodeT, EdgeT, num &gt;</a>, <a class="el" href="d7/d8f/classpassenger_1_1Tree.html#a2c3419b60f5fad32c1b3f339989d08e4">passenger::Tree&lt; ContentT, LeafT &gt;</a></li>
+<li>num_t&#160;:&#160;<a class="el" href="da/d67/classpassenger_1_1Table.html#ad792dc654895fea1885e346554c7a216">passenger::Table&lt; CellT, num &gt;</a></li>
+<li>numberenumeration_t&#160;:&#160;<a class="el" href="d4/dd5/classpassenger_1_1PassengerNumber.html#a57dfd277e0bf242089386a726cdcd903">passenger::PassengerNumber&lt; num &gt;</a></li>
+<li>passenger_group_t&#160;:&#160;<a class="el" href="df/dc8/classpassenger_1_1ActionPassengerGroup.html#a201726b8af30506d4d0147327965d7c5">passenger::ActionPassengerGroup&lt; GraphPassengerT &gt;</a>, <a class="el" href="d5/d82/classpassenger_1_1PassengerNodeActional.html#af3041d8280a9156a9c588db72b92a1d8">passenger::PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;</a></li>
+<li>passengernumber_t&#160;:&#160;<a class="el" href="da/df5/classpassenger_1_1PassengerNode.html#af1badda7733e01aef8c174d3cf2871cc">passenger::PassengerNode&lt; GraphPassengerT, EdgeT, num &gt;</a>, <a class="el" href="d5/d82/classpassenger_1_1PassengerNodeActional.html#a01f91a0a0b3a76654c8c9b55da5be85d">passenger::PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;</a></li>
+<li>row_content_t&#160;:&#160;<a class="el" href="d3/dd6/classpassenger_1_1VariateTable.html#a0ea94e1a8bed34b7a7e4ae46f1105267">passenger::VariateTable&lt; ColT, RowT, CellT, num &gt;</a></li>
+<li>row_t&#160;:&#160;<a class="el" href="da/d67/classpassenger_1_1Table.html#a64ee43b1b0dec1151ae213c30a877167">passenger::Table&lt; CellT, num &gt;</a></li>
+<li>self_t&#160;:&#160;<a class="el" href="df/d22/classpassenger_1_1GraphTable.html#aae6c801d365e8f25cb34fe35bc465cc8">passenger::GraphTable&lt; GT, NodeT, EdgeT, num &gt;</a></li>
+<li>tree_t&#160;:&#160;<a class="el" href="df/d22/classpassenger_1_1GraphTable.html#a65d0a2ab8beaf8f8c17e6e4628633c62">passenger::GraphTable&lt; GT, NodeT, EdgeT, num &gt;</a>, <a class="el" href="d7/d8f/classpassenger_1_1Tree.html#a0bc420a8a0ad7e5bd8182d53cdef8343">passenger::Tree&lt; ContentT, LeafT &gt;</a></li>
+<li>variate_table_t&#160;:&#160;<a class="el" href="df/d22/classpassenger_1_1GraphTable.html#a439b97afe448b9040dbdb4e28aa2da6c">passenger::GraphTable&lt; GT, NodeT, EdgeT, num &gt;</a></li>
+<li>vector_t&#160;:&#160;<a class="el" href="d9/da3/classpassenger_1_1NumberEnumeration.html#a0fa90477e4224b2bd5f480319277a638">passenger::NumberEnumeration&lt; num &gt;</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

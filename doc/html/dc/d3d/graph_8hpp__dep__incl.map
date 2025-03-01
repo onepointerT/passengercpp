@@ -1,5 +1,19 @@
 <map id="/home/yannika/devel/dcgpai/lib/passengercpp/src/graph.hpp" name="/home/yannika/devel/dcgpai/lib/passengercpp/src/graph.hpp">
+<<<<<<< Updated upstream
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,171,58"/>
 <area shape="rect" id="Node000002" href="$d7/d75/graph_8cpp.html" title=" " alt="" coords="5,106,171,159"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,73,91,106,85,106,85,73"/>
+=======
+<<<<<<< Updated upstream
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,171,58"/>
+<area shape="rect" id="Node000002" href="$d7/d75/graph_8cpp.html" title=" " alt="" coords="5,106,171,159"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,73,91,106,85,106,85,73"/>
+=======
+<area shape="rect" id="Node000001" title=" " alt="" coords="111,5,276,58"/>
+<area shape="rect" id="Node000002" href="$d7/d75/graph_8cpp.html" title=" " alt="" coords="5,106,171,159"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,71,117,107,114,104,153,67"/>
+<area shape="rect" id="Node000003" href="$d5/d94/graph__connection__table_8hpp.html" title=" " alt="" coords="195,106,405,159"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,67,274,104,270,107,230,71"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 </map>

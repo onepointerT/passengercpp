@@ -1,10 +1,22 @@
 var searchData=
 [
-  ['node_0',['Node',['../dc/dc7/passenger_8cpp.html#aed91756449328e2c454e53e9c5e53936',1,'passenger.cpp']]],
-  ['node_3c_20graphpassengernumber_3c_20num_5fnon_5fdefault_20_3e_20_3e_1',['Node&lt; GraphPassengerNumber&lt; num_non_default &gt; &gt;',['../dc/dc7/passenger_8cpp.html#a8c3521b8c2ed09f0ecd56daec66184d3',1,'passenger.cpp']]],
-  ['node_3c_20graphpassengernumber_3c_3e_20_3e_2',['Node&lt; GraphPassengerNumber&lt;&gt; &gt;',['../dc/dc7/passenger_8cpp.html#ad2dbffe8d15d49f8df056e7ba195e8cc',1,'passenger.cpp']]],
-  ['nodenumbered_3c_20graphpassengernumber_3c_20num_5fnon_5fdefault_20_3e_2c_20num_5fnon_5fdefault_20_3e_3',['NodeNumbered&lt; GraphPassengerNumber&lt; num_non_default &gt;, num_non_default &gt;',['../dc/dc7/passenger_8cpp.html#ac91905e17a7471e94988193b5c24cf73',1,'passenger.cpp']]],
-  ['nodenumbered_3c_20graphpassengernumber_3c_3e_20_3e_4',['NodeNumbered&lt; GraphPassengerNumber&lt;&gt; &gt;',['../dc/dc7/passenger_8cpp.html#a83817f32e72e029fd5b79c074b03b979',1,'passenger.cpp']]],
-  ['numberenumeration_5',['NumberEnumeration',['../dc/dc7/passenger_8cpp.html#ac712f5ff62e562ddd32fff865bd11e85',1,'passenger.cpp']]],
-  ['numberenumeration_3c_20num_5fnon_5fdefault_20_3e_6',['NumberEnumeration&lt; num_non_default &gt;',['../dc/dc7/passenger_8cpp.html#ad9a1ef037d632d57643a80c2b27bbc9f',1,'passenger.cpp']]]
+  ['m_5faction_0',['m_action',['../d5/d88/classpassenger_1_1Edge.html#a4381d46ddc4d22930b10318bac46412c',1,'passenger::Edge']]],
+  ['m_5faction_5ffuncname_1',['m_action_funcname',['../d5/d88/classpassenger_1_1Edge.html#af1724fdb1540f4225e340e9014595d77',1,'passenger::Edge']]],
+  ['m_5farrivals_2',['m_arrivals',['../d7/d1e/classpassenger_1_1Node.html#a36e1a3a6936ffcfc9e203c0f8a6a4a45',1,'passenger::Node']]],
+  ['m_5fcolumns_3',['m_columns',['../d3/dd6/classpassenger_1_1VariateTable.html#a0b1505586eb7d522fb63f0baba8763b5',1,'passenger::VariateTable']]],
+  ['m_5fedges_5foutgoing_4',['m_edges_outgoing',['../da/df5/classpassenger_1_1PassengerNode.html#a79a276d26611270eceaf547a1f9ff1b5',1,'passenger::PassengerNode']]],
+  ['m_5fend_5',['m_end',['../d0/d54/classpassenger_1_1Graph.html#a0a0da1ff59aeebeb69697e90dd628237',1,'passenger::Graph']]],
+  ['m_5ffunc_6',['m_func',['../d9/d1b/classpassenger_1_1ActionFunction.html#a1ba5f1426282a5bad4169f25ad6e73ef',1,'passenger::ActionFunction']]],
+  ['m_5ffunc_5fpre_5farrive_7',['m_func_pre_arrive',['../d5/d82/classpassenger_1_1PassengerNodeActional.html#a14c1dc69f8964bac80d5b1c355a440bd',1,'passenger::PassengerNodeActional']]],
+  ['m_5ffunc_5fpre_5fdeparture_8',['m_func_pre_departure',['../d5/d82/classpassenger_1_1PassengerNodeActional.html#acb69f51e1634570fe9ca800789d06520',1,'passenger::PassengerNodeActional']]],
+  ['m_5ffunctions_9',['m_functions',['../da/db1/classpassenger_1_1Action.html#ae360de343277f0b48c3df1347661f96a',1,'passenger::Action']]],
+  ['m_5fgroup_5ffunctions_10',['m_group_functions',['../d4/dc4/classpassenger_1_1ActionGroupFunction.html#af21d6fb565e11d2b363da31d61a933ab',1,'passenger::ActionGroupFunction::m_group_functions'],['../df/dc8/classpassenger_1_1ActionPassengerGroup.html#a01cd30ca641aba429afb7b7dd4235f3f',1,'passenger::ActionPassengerGroup::m_group_functions']]],
+  ['m_5fmembers_11',['m_members',['../d4/dd5/classpassenger_1_1PassengerNumber.html#afb30858cab64fe686e696355fff983c1',1,'passenger::PassengerNumber']]],
+  ['m_5fmembers_5fcount_12',['m_members_count',['../d4/dd5/classpassenger_1_1PassengerNumber.html#adb10b55772660d8ef09de0872b05d2ed',1,'passenger::PassengerNumber']]],
+  ['m_5fmembers_5fthere_13',['m_members_there',['../d4/dd5/classpassenger_1_1PassengerNumber.html#a524020abd9edb46b7107eede6e36a840',1,'passenger::PassengerNumber']]],
+  ['m_5fnum_14',['m_num',['../de/dd8/classpassenger_1_1GraphPassengerNumber.html#ab3d04d15133670b9ddc3832cbf3bf92a',1,'passenger::GraphPassengerNumber']]],
+  ['m_5fparameter_5fpairs_15',['m_parameter_pairs',['../d3/dfa/classpassenger_1_1GraphPassenger.html#a788670dfc8b93cd89cf14451d78519e7',1,'passenger::GraphPassenger']]],
+  ['m_5frows_16',['m_rows',['../d3/dd6/classpassenger_1_1VariateTable.html#ab73d7bc9d9c1d9d9472869fa341ef859',1,'passenger::VariateTable']]],
+  ['m_5fstart_17',['m_start',['../d0/d54/classpassenger_1_1Graph.html#a7f920650145341cfb4f2d6ea93d70ea6',1,'passenger::Graph']]],
+  ['m_5ftarget_5fnode_18',['m_target_node',['../d9/de1/classpassenger_1_1EdgeToNode.html#abf5b596032056a266b3029bd5ffdce3b',1,'passenger::EdgeToNode::m_target_node'],['../de/d48/classpassenger_1_1EdgeControlled.html#adf4e5eaf6aa87b786e86ae9558f8f9a7',1,'passenger::EdgeControlled::m_target_node']]]
 ];

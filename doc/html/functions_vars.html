@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">passengercpp<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">passengercpp<span id="projectnumber">&#160;0.2.1</span>
    </div>
    <div id="projectbrief">A library that is havening a passenger arriving and departing node graph with and without actions on edges</div>
   </td>
@@ -97,28 +97,74 @@ $(function(){initNavTree('functions_vars.html',''); initResizable(true); });
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all variables with links to the classes they belong to:</div><ul>
-<li>current_member_num&#160;:&#160;<a class="el" href="d1/d37/classGraphPassengerNumber.html#af131fefd6082e659d5ebe25df97ec0dd">GraphPassengerNumber&lt; num &gt;</a></li>
-<li>from&#160;:&#160;<a class="el" href="d2/dc3/classRange.html#a13f9b2f4491904acac41205d2cd8234a">Range&lt; num &gt;</a></li>
-<li>funcname&#160;:&#160;<a class="el" href="d5/def/classActionFunction.html#ac4090a61fa76b5b002fdaf5b052a36d8">ActionFunction</a></li>
-<li>m_action&#160;:&#160;<a class="el" href="d8/d8c/classEdge.html#a8126847161556f5f70cd2af445724e44">Edge&lt; GraphPassengerT, ActionT &gt;</a></li>
-<li>m_action_funcname&#160;:&#160;<a class="el" href="d8/d8c/classEdge.html#adf191e6b18e342ab8c9bf423de47b825">Edge&lt; GraphPassengerT, ActionT &gt;</a></li>
-<li>m_arrivals&#160;:&#160;<a class="el" href="df/dd0/classNode.html#ae07a0cb04ceb4a1ecb0f8d80e13ab957">Node&lt; GraphPassengerT &gt;</a></li>
-<li>m_edges_outgoing&#160;:&#160;<a class="el" href="d8/da6/classPassengerNode.html#a25f9c385776c8547addc23e9693f3866">PassengerNode&lt; GraphPassengerT, EdgeT, num &gt;</a></li>
-<li>m_end&#160;:&#160;<a class="el" href="d2/d62/classGraph.html#a362916aaf33e3366abe20a1f0c45d67e">Graph&lt; NodeT &gt;</a></li>
-<li>m_func&#160;:&#160;<a class="el" href="d5/def/classActionFunction.html#ace53bcb23404b6cd704057c03322e4b3">ActionFunction</a></li>
-<li>m_func_pre_arrive&#160;:&#160;<a class="el" href="da/da9/classPassengerNodeActional.html#ab0aff7885d30b945ebc0c378a6ce2a56">PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;</a></li>
-<li>m_func_pre_departure&#160;:&#160;<a class="el" href="da/da9/classPassengerNodeActional.html#ac82218c931f824b4e9c909722c947415">PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;</a></li>
-<li>m_functions&#160;:&#160;<a class="el" href="db/d09/classAction.html#a920655b8ace004f411a96956834e0adc">Action&lt; GraphPassengerT &gt;</a></li>
-<li>m_group_functions&#160;:&#160;<a class="el" href="da/d43/classActionGroupFunction.html#a3418c28e9c50c36ff9bddbd6455a7c4e">ActionGroupFunction&lt; GraphPassengerT &gt;</a>, <a class="el" href="d5/d95/classActionPassengerGroup.html#aca12380744c3f4dce493a1600d727bd6">ActionPassengerGroup&lt; GraphPassengerT &gt;</a></li>
-<li>m_members&#160;:&#160;<a class="el" href="d6/d3f/classPassengerNumber.html#a0ae7dee4a573b0478df4dae7885526e3">PassengerNumber&lt; num &gt;</a></li>
-<li>m_members_count&#160;:&#160;<a class="el" href="d6/d3f/classPassengerNumber.html#aa835bff6460115f2f76095b193d72bf5">PassengerNumber&lt; num &gt;</a></li>
-<li>m_members_there&#160;:&#160;<a class="el" href="d6/d3f/classPassengerNumber.html#a8315163a12e61e06dc46f089fc6b9733">PassengerNumber&lt; num &gt;</a></li>
-<li>m_num&#160;:&#160;<a class="el" href="d1/d37/classGraphPassengerNumber.html#a949418fdfeb4c21edb52dc5ebf31891d">GraphPassengerNumber&lt; num &gt;</a></li>
-<li>m_parameter_pairs&#160;:&#160;<a class="el" href="d2/ddb/classGraphPassenger.html#a24adb5896e2774fa4ece90065c230c5f">GraphPassenger</a></li>
-<li>m_start&#160;:&#160;<a class="el" href="d2/d62/classGraph.html#ad5951e3656956f861ed76d54fcd972cc">Graph&lt; NodeT &gt;</a></li>
-<li>m_target_node&#160;:&#160;<a class="el" href="d5/d38/classEdgeControlled.html#a1ee1e4c7cea104a720902ba918188230">EdgeControlled&lt; GraphPassengerT, ActionT, NodeT, num &gt;</a>, <a class="el" href="d7/d30/classEdgeToNode.html#a35fe1aab26a9e47a87462a151eb9fa98">EdgeToNode&lt; GraphPassengerT, ActionT, NodeT &gt;</a></li>
-<li>to&#160;:&#160;<a class="el" href="d2/dc3/classRange.html#a152aceb3b3f1374f5e3d00dbc4c5dfc0">Range&lt; num &gt;</a></li>
+<div class="textblock">Here is a list of all variables with links to the classes they belong to:</div>
+
+<h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<li>content&#160;:&#160;<a class="el" href="dd/dd6/classpassenger_1_1Tree_1_1Leaf.html#a71984d538d37aadfdff0d705b2aab7ad">passenger::Tree&lt; ContentT, LeafT &gt;::Leaf&lt; LeafContentT, NodeContentT &gt;</a>, <a class="el" href="d1/d7a/classpassenger_1_1Tree_1_1Node.html#a70802bf25d82e1c7d585c0809f5557f0">passenger::Tree&lt; ContentT, LeafT &gt;::Node&lt; LeafContentT, NodeContentT &gt;</a></li>
+<li>current_member_num&#160;:&#160;<a class="el" href="de/dd8/classpassenger_1_1GraphPassengerNumber.html#ae380325504eedde8bcb708b24a3c871d">passenger::GraphPassengerNumber&lt; num &gt;</a></li>
+</ul>
+
+
+<h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
+<li>from&#160;:&#160;<a class="el" href="da/d69/classpassenger_1_1Range.html#a5f72b9b2c8a6a73640130fbe45058d4f">passenger::Range&lt; num &gt;</a></li>
+<li>funcname&#160;:&#160;<a class="el" href="d9/d1b/classpassenger_1_1ActionFunction.html#ad82f2e2b6fc9a9d63011e06aad120cc4">passenger::ActionFunction</a></li>
+</ul>
+
+
+<h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
+<li>leafs&#160;:&#160;<a class="el" href="d7/d8f/classpassenger_1_1Tree.html#acf2b98dd55f5f78e8f7bed984cbb7a94">passenger::Tree&lt; ContentT, LeafT &gt;</a>, <a class="el" href="d1/d7a/classpassenger_1_1Tree_1_1Node.html#a9a9d16b2655ad3365382e167e9b47c5f">passenger::Tree&lt; ContentT, LeafT &gt;::Node&lt; LeafContentT, NodeContentT &gt;</a></li>
+</ul>
+
+
+<h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>m_action&#160;:&#160;<a class="el" href="d5/d88/classpassenger_1_1Edge.html#a4381d46ddc4d22930b10318bac46412c">passenger::Edge&lt; GraphPassengerT, ActionT &gt;</a></li>
+<li>m_action_funcname&#160;:&#160;<a class="el" href="d5/d88/classpassenger_1_1Edge.html#af1724fdb1540f4225e340e9014595d77">passenger::Edge&lt; GraphPassengerT, ActionT &gt;</a></li>
+<li>m_arrivals&#160;:&#160;<a class="el" href="d7/d1e/classpassenger_1_1Node.html#a36e1a3a6936ffcfc9e203c0f8a6a4a45">passenger::Node&lt; GraphPassengerT &gt;</a></li>
+<li>m_columns&#160;:&#160;<a class="el" href="d3/dd6/classpassenger_1_1VariateTable.html#a0b1505586eb7d522fb63f0baba8763b5">passenger::VariateTable&lt; ColT, RowT, CellT, num &gt;</a></li>
+<li>m_edges_outgoing&#160;:&#160;<a class="el" href="da/df5/classpassenger_1_1PassengerNode.html#a79a276d26611270eceaf547a1f9ff1b5">passenger::PassengerNode&lt; GraphPassengerT, EdgeT, num &gt;</a></li>
+<li>m_end&#160;:&#160;<a class="el" href="d0/d54/classpassenger_1_1Graph.html#a0a0da1ff59aeebeb69697e90dd628237">passenger::Graph&lt; NodeT &gt;</a></li>
+<li>m_func&#160;:&#160;<a class="el" href="d9/d1b/classpassenger_1_1ActionFunction.html#a1ba5f1426282a5bad4169f25ad6e73ef">passenger::ActionFunction</a></li>
+<li>m_func_pre_arrive&#160;:&#160;<a class="el" href="d5/d82/classpassenger_1_1PassengerNodeActional.html#a14c1dc69f8964bac80d5b1c355a440bd">passenger::PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;</a></li>
+<li>m_func_pre_departure&#160;:&#160;<a class="el" href="d5/d82/classpassenger_1_1PassengerNodeActional.html#acb69f51e1634570fe9ca800789d06520">passenger::PassengerNodeActional&lt; GraphPassengerT, EdgeT, num &gt;</a></li>
+<li>m_functions&#160;:&#160;<a class="el" href="da/db1/classpassenger_1_1Action.html#ae360de343277f0b48c3df1347661f96a">passenger::Action&lt; GraphPassengerT &gt;</a></li>
+<li>m_group_functions&#160;:&#160;<a class="el" href="d4/dc4/classpassenger_1_1ActionGroupFunction.html#af21d6fb565e11d2b363da31d61a933ab">passenger::ActionGroupFunction&lt; GraphPassengerT &gt;</a>, <a class="el" href="df/dc8/classpassenger_1_1ActionPassengerGroup.html#a01cd30ca641aba429afb7b7dd4235f3f">passenger::ActionPassengerGroup&lt; GraphPassengerT &gt;</a></li>
+<li>m_members&#160;:&#160;<a class="el" href="d4/dd5/classpassenger_1_1PassengerNumber.html#afb30858cab64fe686e696355fff983c1">passenger::PassengerNumber&lt; num &gt;</a></li>
+<li>m_members_count&#160;:&#160;<a class="el" href="d4/dd5/classpassenger_1_1PassengerNumber.html#adb10b55772660d8ef09de0872b05d2ed">passenger::PassengerNumber&lt; num &gt;</a></li>
+<li>m_members_there&#160;:&#160;<a class="el" href="d4/dd5/classpassenger_1_1PassengerNumber.html#a524020abd9edb46b7107eede6e36a840">passenger::PassengerNumber&lt; num &gt;</a></li>
+<li>m_num&#160;:&#160;<a class="el" href="de/dd8/classpassenger_1_1GraphPassengerNumber.html#ab3d04d15133670b9ddc3832cbf3bf92a">passenger::GraphPassengerNumber&lt; num &gt;</a></li>
+<li>m_parameter_pairs&#160;:&#160;<a class="el" href="d3/dfa/classpassenger_1_1GraphPassenger.html#a788670dfc8b93cd89cf14451d78519e7">passenger::GraphPassenger</a></li>
+<li>m_rows&#160;:&#160;<a class="el" href="d3/dd6/classpassenger_1_1VariateTable.html#ab73d7bc9d9c1d9d9472869fa341ef859">passenger::VariateTable&lt; ColT, RowT, CellT, num &gt;</a></li>
+<li>m_start&#160;:&#160;<a class="el" href="d0/d54/classpassenger_1_1Graph.html#a7f920650145341cfb4f2d6ea93d70ea6">passenger::Graph&lt; NodeT &gt;</a></li>
+<li>m_target_node&#160;:&#160;<a class="el" href="de/d48/classpassenger_1_1EdgeControlled.html#adf4e5eaf6aa87b786e86ae9558f8f9a7">passenger::EdgeControlled&lt; GraphPassengerT, ActionT, NodeT, num &gt;</a>, <a class="el" href="d9/de1/classpassenger_1_1EdgeToNode.html#abf5b596032056a266b3029bd5ffdce3b">passenger::EdgeToNode&lt; GraphPassengerT, ActionT, NodeT &gt;</a></li>
+</ul>
+
+
+<h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
+<li>name&#160;:&#160;<a class="el" href="d7/d1e/classpassenger_1_1Node.html#ab0ce8583d34f53ae69757d70043e804b">passenger::Node&lt; GraphPassengerT &gt;</a></li>
+<li>node_end&#160;:&#160;<a class="el" href="d6/da2/classpassenger_1_1GraphTable_1_1IncomingMap.html#a314ca0cf3e211c069652413bf1c10615">passenger::GraphTable&lt; GT, NodeT, EdgeT, num &gt;::IncomingMap</a></li>
+<li>node_start&#160;:&#160;<a class="el" href="d2/d90/classpassenger_1_1GraphTable_1_1OutgoingMap.html#a8b0ff4905228796045930a2d778cd0c6">passenger::GraphTable&lt; GT, NodeT, EdgeT, num &gt;::OutgoingMap</a></li>
+<li>nodes&#160;:&#160;<a class="el" href="d7/d8f/classpassenger_1_1Tree.html#a8d4537060a7dde0b2e203ed411c8150e">passenger::Tree&lt; ContentT, LeafT &gt;</a></li>
+<li>num_node&#160;:&#160;<a class="el" href="d7/d1e/classpassenger_1_1Node.html#a7735da497eacf6d3c5d48579f4399985">passenger::Node&lt; GraphPassengerT &gt;</a></li>
+</ul>
+
+
+<h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
+<li>parent&#160;:&#160;<a class="el" href="dd/dd6/classpassenger_1_1Tree_1_1Leaf.html#a2b26187818727f2eb3d6f5b11e012299">passenger::Tree&lt; ContentT, LeafT &gt;::Leaf&lt; LeafContentT, NodeContentT &gt;</a>, <a class="el" href="d1/d7a/classpassenger_1_1Tree_1_1Node.html#acc584fcedc19e75cd7950328060c3bd6">passenger::Tree&lt; ContentT, LeafT &gt;::Node&lt; LeafContentT, NodeContentT &gt;</a></li>
+</ul>
+
+
+<h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
+<li>root&#160;:&#160;<a class="el" href="d7/d8f/classpassenger_1_1Tree.html#ad56aa733f2a68d993ca09ae4eef5da1c">passenger::Tree&lt; ContentT, LeafT &gt;</a></li>
+</ul>
+
+
+<h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>subs&#160;:&#160;<a class="el" href="d1/d7a/classpassenger_1_1Tree_1_1Node.html#ab6cc715e799d6b41f4602c9fdca3a5d6">passenger::Tree&lt; ContentT, LeafT &gt;::Node&lt; LeafContentT, NodeContentT &gt;</a></li>
+</ul>
+
+
+<h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
+<li>to&#160;:&#160;<a class="el" href="da/d69/classpassenger_1_1Range.html#a0754201da84555074751438497fa5699">passenger::Range&lt; num &gt;</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

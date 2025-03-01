@@ -1,7 +1,7 @@
 var graph_8cpp =
 [
-    [ "Graph< Node< GraphPassenger > >", "d7/d75/graph_8cpp.html#a006a025c6b737c7ed36b4d50ca445306", null ],
-    [ "Graph< Node< GraphPassengerNumber<> > >", "d7/d75/graph_8cpp.html#aeb843652cb1ae973ef182c618eee81ee", null ],
-    [ "Graph< PassengerNode< GraphPassenger, Edge< GraphPassenger, Action< GraphPassenger > > > >", "d7/d75/graph_8cpp.html#a0cdbf32a64cea806af8314ff97fe2434", null ],
-    [ "Graph< PassengerNode< GraphPassengerNumber<>, Edge< GraphPassengerNumber<>, Action< GraphPassengerNumber<> > > > >", "d7/d75/graph_8cpp.html#a63919cbb594aa629917cb415ab06b74c", null ]
+    [ "passenger::Graph< Node< GraphPassenger > >", "de/d12/namespacepassenger.html#a5ff1f229c1152541bb942e1878d414fd", null ],
+    [ "passenger::Graph< Node< GraphPassengerNumber<> > >", "de/d12/namespacepassenger.html#a22b494b1fbccc01b94e8ff8d75d4062d", null ],
+    [ "passenger::Graph< PassengerNode< GraphPassenger, Edge< GraphPassenger, Action< GraphPassenger > > > >", "de/d12/namespacepassenger.html#af2267841abdb0212d40ad1e7083d55e9", null ],
+    [ "passenger::Graph< PassengerNode< GraphPassengerNumber<>, Edge< GraphPassengerNumber<>, Action< GraphPassengerNumber<> > > > >", "de/d12/namespacepassenger.html#a8dbc122d8180ac248dd4d88e8fa02315", null ]
 ];

@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$db/d09/classAction.html" title="An action that can be performed and where named functionals can be absolved." alt="" coords="5,5,193,30"/>
+<area shape="rect" id="Node000000" href="$da/db1/classpassenger_1_1Action.html" title=" " alt="" coords="5,37,202,76"/>
+<area shape="rect" id="Node000001" href="$d4/dc4/classpassenger_1_1ActionGroupFunction.html" title=" " alt="" coords="250,5,461,44"/>
+<area shape="poly" id="edge11_Node000000_Node000001" title=" " alt="" coords="217,40,249,35,250,41,218,45"/>
+<area shape="rect" id="Node000002" href="$df/dc8/classpassenger_1_1ActionPassengerGroup.html" title="A specialization of Action with functions for grouped graph passenger absolvents." alt="" coords="261,68,450,107"/>
+<area shape="poly" id="edge12_Node000000_Node000002" title=" " alt="" coords="218,68,261,73,260,79,217,73"/>
 </map>

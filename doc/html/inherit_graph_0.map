@@ -1,7 +1,22 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$db/d09/classAction.html" title=" " alt="" coords="5,44,247,69"/>
-<area shape="rect" id="Node000001" href="$da/d43/classActionGroupFunction.html" title=" " alt="" coords="297,5,448,44"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="241,39,296,32,297,37,242,44"/>
-<area shape="rect" id="Node000002" href="$d5/d95/classActionPassengerGroup.html" title="A specialization of Action with functions for grouped graph passenger absolvents." alt="" coords="295,68,450,107"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="246,69,295,75,294,80,245,74"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="421,71,460,96"/>
+<area shape="rect" id="Node000001" href="$df/d22/classpassenger_1_1GraphTable.html" title=" " alt="" coords="581,5,768,44"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="475,72,594,42,595,47,476,77"/>
+<area shape="rect" id="Node000003" href="$df/d22/classpassenger_1_1GraphTable.html" title="A graph that is represented with an additional table for e.g. search and way alghorithms." alt="" coords="581,68,768,107"/>
+<area shape="poly" id="edge2_Node000000_Node000003" title=" " alt="" coords="476,81,581,83,581,88,476,87"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,148,78,173"/>
+<area shape="rect" id="Node000006" href="$da/d67/classpassenger_1_1Table.html" title=" " alt="" coords="130,107,296,145"/>
+<area shape="poly" id="edge3_Node000005_Node000006" title=" " alt="" coords="93,148,129,140,130,146,94,153"/>
+<area shape="rect" id="Node000008" href="$d6/da2/classpassenger_1_1GraphTable_1_1IncomingMap.html" title="A simple map that admmires the edgge to their node that they are coming from." alt="" coords="126,169,300,222"/>
+<area shape="poly" id="edge5_Node000005_Node000008" title=" " alt="" coords="93,168,126,175,125,180,92,174"/>
+<area shape="rect" id="Node000009" href="$d2/d90/classpassenger_1_1GraphTable_1_1OutgoingMap.html" title="A simple map that admires the edges to their nodes that they are heading to." alt="" coords="126,246,300,299"/>
+<area shape="poly" id="edge6_Node000005_Node000009" title=" " alt="" coords="67,182,95,207,127,232,148,243,145,248,124,236,92,212,64,186"/>
+<area shape="rect" id="Node000004" href="$da/d67/classpassenger_1_1Table.html" title="A classic table with indices on rows and columns, that can save an object in its cells." alt="" coords="130,20,296,59"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="68,136,124,92,177,57,180,61,127,96,71,140"/>
+<area shape="rect" id="Node000007" href="$d3/dd6/classpassenger_1_1VariateTable.html" title="A Table&lt; CellT, num &gt; that is able to save objects for the row&#39;s and column&#39;s heading." alt="" coords="348,120,533,159"/>
+<area shape="poly" id="edge4_Node000006_Node000007" title=" " alt="" coords="311,129,348,131,347,137,311,134"/>
+<area shape="rect" id="Node000002" href="$d3/dd6/classpassenger_1_1VariateTable.html" title=" " alt="" coords="353,8,528,47"/>
+<area shape="poly" id="edge8_Node000004_Node000002" title=" " alt="" coords="311,31,352,29,353,35,312,37"/>
+<area shape="poly" id="edge9_Node000002_Node000001" title=" " alt="" coords="544,23,581,23,581,28,544,29"/>
+<area shape="poly" id="edge10_Node000002_Node000003" title=" " alt="" coords="534,49,597,65,595,70,533,54"/>
 </map>

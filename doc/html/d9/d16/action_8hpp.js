@@ -1,12 +1,12 @@
 var action_8hpp =
 [
-    [ "ActionFunction", "d5/def/classActionFunction.html", "d5/def/classActionFunction" ],
-    [ "Action< GraphPassengerT >", "db/d09/classAction.html", "db/d09/classAction" ],
-    [ "ActionGroupFunction< GraphPassengerT >", "da/d43/classActionGroupFunction.html", "da/d43/classActionGroupFunction" ],
-    [ "ActionPassengerGroup< GraphPassengerT >", "d5/d95/classActionPassengerGroup.html", "d5/d95/classActionPassengerGroup" ],
-    [ "action_function_t", "d9/d16/action_8hpp.html#ad1712a5e93ea338b669be4d8cbdc922b", null ],
-    [ "action_group_function_t", "d9/d16/action_8hpp.html#a09b4a6e81d20e3079821bbd93670c351", null ],
-    [ "named_action_function_t", "d9/d16/action_8hpp.html#abff27eff460da0359d713e6c0184cd34", null ],
-    [ "Action< GraphPassengerT >::m_functions", "d9/d16/action_8hpp.html#a696787d16551da6b40c2ad83c3699bee", null ],
-    [ "ActionPassengerGroup< GraphPassengerT >::m_group_functions", "d9/d16/action_8hpp.html#abb82cf048602001402fc0d6caaa11268", null ]
+    [ "passenger::ActionFunction", "d9/d1b/classpassenger_1_1ActionFunction.html", "d9/d1b/classpassenger_1_1ActionFunction" ],
+    [ "passenger::Action< GraphPassengerT >", "da/db1/classpassenger_1_1Action.html", "da/db1/classpassenger_1_1Action" ],
+    [ "passenger::ActionGroupFunction< GraphPassengerT >", "d4/dc4/classpassenger_1_1ActionGroupFunction.html", "d4/dc4/classpassenger_1_1ActionGroupFunction" ],
+    [ "passenger::ActionPassengerGroup< GraphPassengerT >", "df/dc8/classpassenger_1_1ActionPassengerGroup.html", "df/dc8/classpassenger_1_1ActionPassengerGroup" ],
+    [ "passenger::action_function_t", "de/d12/namespacepassenger.html#a1fcb7d8e8a00c848796db1087a656d4b", null ],
+    [ "passenger::action_group_function_t", "de/d12/namespacepassenger.html#a70186d663fda2e537b8206c8ef25ae7d", null ],
+    [ "passenger::named_action_function_t", "de/d12/namespacepassenger.html#a8a8398df0d0f98ad4c855dd7c882184f", null ],
+    [ "passenger::m_functions", "de/d12/namespacepassenger.html#aa3c04a8ff9b21cf4ee559b9f9164f36f", null ],
+    [ "passenger::m_group_functions", "de/d12/namespacepassenger.html#ac732b8c407d3d2b92514cb5838bcec7d", null ]
 ];

@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,12,85,37"/>
+<area shape="rect" id="Node000001" href="$d3/dfa/classpassenger_1_1GraphPassenger.html" title="A traveller through a graph, its edges and nodes. Inherits std::string for better naming convenience." alt="" coords="133,12,319,37"/>
+<area shape="poly" id="edge29_Node000000_Node000001" title=" " alt="" coords="100,22,132,22,132,27,100,27"/>
+<area shape="rect" id="Node000002" href="$de/dd8/classpassenger_1_1GraphPassengerNumber.html" title="A specialization of GraphPassenger. Can be used to numerata the graph passengers." alt="" coords="367,5,553,44"/>
+<area shape="poly" id="edge30_Node000001_Node000002" title=" " alt="" coords="334,22,367,22,367,27,334,27"/>
+</map>

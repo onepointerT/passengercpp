@@ -1,0 +1,17 @@
+<map id="passenger::EdgeToNode&lt; GraphPassengerT, ActionT, NodeT &gt;" name="passenger::EdgeToNode&lt; GraphPassengerT, ActionT, NodeT &gt;">
+<area shape="rect" id="Node000001" title="A inheriting class of of Edge that also contains a NodeT where it is directing to...." alt="" coords="1132,30,1325,83"/>
+<area shape="rect" id="Node000002" href="$d5/d88/classpassenger_1_1Edge.html" title="A normal edge with an action. A specialization of EdgeSimple&lt; GraphPassengerT &gt;" alt="" coords="766,5,994,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1010,34,1132,45,1131,50,1010,39"/>
+<area shape="rect" id="Node000003" href="$da/da5/classpassenger_1_1EdgeSimple.html" title=" " alt="" coords="538,5,698,44"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="713,22,765,22,765,27,713,27"/>
+<area shape="rect" id="Node000004" href="$d7/d84/classpassenger_1_1NodeNumbered.html" title=" " alt="" coords="790,68,970,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="986,75,1132,62,1132,68,986,81"/>
+<area shape="rect" id="Node000005" href="$d7/d1e/classpassenger_1_1Node.html" title=" " alt="" coords="539,68,697,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="713,85,790,85,790,90,713,90"/>
+<area shape="rect" id="Node000006" href="$d4/dd5/classpassenger_1_1PassengerNumber.html" title=" " alt="" coords="519,131,717,169"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="716,124,796,105,797,110,717,129"/>
+<area shape="rect" id="Node000007" href="$d9/da3/classpassenger_1_1NumberEnumeration.html" title=" " alt="" coords="186,131,394,169"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="410,147,519,147,519,153,410,153"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="5,131,137,169"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="153,147,185,147,185,153,153,153"/>
+</map>

@@ -2,6 +2,7 @@
 #pragma once
 
 #include <initializer_list>
+#include <map>
 #include <stdexcept>
 #include <vector>
 #include <utility>
@@ -22,13 +23,13 @@ class Table
 {
 public:
     /// @brief The type that is saved as pointer in the cells 
-    typedef typename CellT cell_t;
+    typedef CellT cell_t;
     /// @brief The type of all rows
-    typedef typename std::map< num, CellT* > row_t;
+    typedef std::map< num, CellT* > row_t;
     /// @brief The type that a column has
-    typedef typename std::pair< num, CellT* > col_t;
+    typedef std::pair< num, CellT* > col_t;
     /// @brief The numeric type with which the rows and columns are enumerated
-    typedef typename num num_t;
+    typedef num num_t;
 
     /// @brief Get or assign a row with the `table[row_number]` operator
     /// @param row The number of row to access
@@ -38,7 +39,7 @@ public:
             return this->at( row );
         } catch ( std::out_of_range& oor ) {
             row_t* row_new = new row_t();
-            (*(std::map<num, row_t >))[row] = *row_new;
+            this->at( row ) = *row_new;
             return this->at( row );
         }
     }
@@ -68,7 +69,7 @@ public:
                 ; it != cols.cend(); ++it
             ) {
                 if ( it->first == col ) {
-                    columns.push_back( std::make_pair< ( it->first, it->second ) );
+                    columns.push_back( std::make_pair( it->first, it->second ) );
                 }
             }
         }
@@ -88,12 +89,12 @@ public:
                 ; it != cols.cend(); ++it
             ) {
                 if ( it->first == row ) {
-                    columns.push_back( row, it->second );
+                    rows.push_back( row, it->second );
                 }
             }
         }
 
-        return *columns;
+        return *rows;
     }
 
     /// @brief Constructor.
@@ -114,11 +115,11 @@ class VariateTable
 {
 public:
     /// @brief The type of the column's enumerational heading
-    typedef typename ColT col_t;
+    typedef ColT col_content_t;
     /// @brief The type of the row's enumerational heading
-    typedef typename RowT row_t;
-    /// @brief The type of the cell's content
-    typedef typename CellT cell_t;
+    typedef RowT row_content_t;
+    /// @brief The type of the field's content
+    typedef CellT cell_content_t;
 
 protected:
     /// @brief The columns's heading objects
@@ -141,14 +142,14 @@ public:
     /// @param row A pointer-to-object of the type ´row_t` that is suggested as row in this table
     /// @param col A pointer-to-object of the type ´col_t` that is suggested as column in this table
     /// @return An assignable reference to a cell
-    cell_t& at( row_t* row, col_t* col) {
+    cell_content_t& at( row_content_t* row, col_content_t* col) {
         unsigned int pos_col = 0;
-        for ( col_t* colT : this->m_columns ) {
+        for ( col_content_t* colT : this->m_columns ) {
             if ( colT == col ) break;
             ++pos_col;
         }
         unsigned int pos_row = 0;
-        for ( row_t* rowT : this->m_rows ) {
+        for ( row_content_t* rowT : this->m_rows ) {
             if ( rowT == row ) break;
             ++pos_row;
         }
@@ -159,9 +160,9 @@ public:
     /// @brief Search the rows of this table by the row's object
     /// @param row A pointer-to-object of the type ´row_t` that is suggested as row in this table
     /// @return A vector with all values found in the row `row`
-    std::vector< cell_t > atRow( row_t* row ) {
+    std::vector< cell_content_t > atRow( row_content_t* row ) {
         unsigned int pos_row = 0;
-        for ( row_t* rowT : this->m_rows ) {
+        for ( row_content_t* rowT : this->m_rows ) {
             if ( rowT == row ) break;
             ++pos_row;
         }
@@ -171,9 +172,9 @@ public:
     /// @brief Search the columns of this table by the column's object
     /// @param col A pointer-to-object of the type ´col_t` that is suggested as column in this table
     /// @return A vector with all values found in the column `col`
-    std::vector< cell_t > atCol( col_t* col ) {
+    std::vector< cell_content_t > atCol( col_content_t* col ) {
         unsigned int pos_col = 0;
-        for ( col_t* colT : this->m_columns ) {
+        for ( col_content_t* colT : this->m_columns ) {
             if ( colT == col ) break;
             ++pos_col;
         }
@@ -195,22 +196,22 @@ concept is_graph = requires ( GT* gt ){
 /// @tparam num The number type with which the table is numbered
 /// @note The column represents all incoming edges to a node, the row all outgoing edges of a node.
 template< class GT, class NodeT, class EdgeT, typename num = num_non_default >
-    requires passenger::is_graph< GT, NodeT >
+    requires is_graph< GT, NodeT >
 class GraphTable
     :   public GT
     ,   public VariateTable< NodeT, NodeT, EdgeT >
 {
 public:
     /// @brief Your graph's type
-    typedef typename GT graph_t;
+    typedef GT graph_t;
     /// @brief The variate table type that is used and inherited for this class
-    typedef typename VariateTable< NodeT, NodeT, EdgeT > variate_table_t;
+    typedef VariateTable< NodeT, NodeT, EdgeT > variate_table_t;
     /// @brief The type of all nodes in the graph
-    typedef typename NodeT node_t;
+    typedef NodeT node_t;
     /// @brief The type of all edges of the graph
-    typedef typename EdgeT edge_t;
+    typedef EdgeT edge_t;
     /// @brief The type of this class
-    typedef typename GraphTable< GT, NodeT, EdgeT, num > self_t;
+    typedef GraphTable< GT, NodeT, EdgeT, num > self_t;
 
     /// @brief A simple map that admires the edges to their nodes that they are heading to
     class OutgoingMap
@@ -228,8 +229,8 @@ public:
             :   std::map< EdgeT*, NodeT* >()
             ,   node_start( start_node )
         {
-            for ( std::pair< num, EdgeT* > >& edge : vec ) {
-                this->push_back( edge.second, this->m_columns.at( edge.first ) );
+            for ( std::pair< num, EdgeT* >& edge : vec ) {
+                this->push_back( std::make_pair( edge.second, this->m_columns.at( edge.first ) ) );
             }
         }
     };
@@ -250,8 +251,8 @@ public:
             :   std::map< EdgeT*, NodeT* >()
             ,   node_end( end_node )
         {
-            for ( std::pair< num, EdgeT* > >& edge : vec ) {
-                this->push_back( edge.second, this->m_rows.at( edge.first ) );
+            for ( std::pair< num, EdgeT* >& edge : vec ) {
+                this->push_back( std::make_pair( edge.second, this->m_rows.at( edge.first ) ) );
             }
         }
     };
@@ -259,15 +260,15 @@ public:
     /// @brief Get a reference to a `OutgoingMap` for one node and all outgoing edges
     /// @param node The node, where all outgoing edges of the `OutgoingMap` start
     OutgoingMap& make_outgoingmap( const NodeT* node ) {
-        typename std::vector< variate_table_t::cell_t > outgoings
-            = this->atRow( node )
+        std::vector< typename variate_table_t::cell_t > outgoings
+            = this->atRow( node );
         return *(new OutgoingMap( outgoings, node ));
     }
 
     /// @brief Get a reference to a `IncomingMap` for one node and all incoming edges
     /// @param node The node, where all outgoing edges of the `IncomingMap` end
     IncomingMap& make_incomingmap( const NodeT* node ) {
-        typename std::vector< variate_table_t::cell_t > incomings
+        std::vector< typename variate_table_t::cell_t > incomings
             = this->atCol( node );
         return *(new IncomingMap( incomings, node ) );
     }
@@ -275,7 +276,7 @@ public:
     /// @brief The class that handles routes
     class Route {
         /// @brief An index of a node or an edge
-        class Index : public unsigned int {};
+        typedef unsigned int Index;
         /// @brief An index pair, e.g. for accessing a table
         class IndexPair : public std::pair< Index, Index > {};
 
@@ -329,6 +330,7 @@ public:
                 AlongNodes* route_current = nullptr;
 
                 // Test all nodes, if they can have a route to start
+                typename IncomingMap::const_iterator ins_it;
                 for ( typename IncomingMap::const_iterator in_it : incomings_start ) {
 
                     route_current = Route::findRouteToFrom(
@@ -336,6 +338,8 @@ public:
                                     , graph->m_rows[ out_it->first ]
                                     , graph
                     );
+
+                    ins_it = in_it;
 
                     if  ( route_current != nullptr ) break;
                     else if ( route_current == nullptr ) continue;
@@ -345,7 +349,7 @@ public:
 
                 if ( route_current == nullptr ) { // If no route was found, we try to reach from from one node before `to`
 
-                    NodeT* node_before_to = graph->atRow( in_it->first );
+                    NodeT* node_before_to = graph->atRow( ins_it->first );
                     route_current = Route::findRouteToFrom( node_before_to, from );
 
                     // If a route was found until here, we return it and add the node to (see note at parent if-clause)
@@ -365,11 +369,11 @@ public:
         /// @param graph The graph as object pointer
         /// @return `nullptr`, if there is no route, a valid `std::vector< AlongNodes >` object otherwise
         static std::vector< AlongNodes* >* findRoutesToFrom( const NodeT* to, const NodeT* from, const self_t* graph ) {
-            std::vector< AlongNodes* >* routes = new std:::vector< AlongNodes* >();
+            std::vector< AlongNodes* >* routes = new std::vector< AlongNodes* >();
 
             if ( to != from ) {
 
-                AlongNodes* node_route = this->findRouteToFrom( to, from, graph );
+                AlongNodes* node_route = Route::findRouteToFrom( to, from, graph );
                 routes.push_back( node_route );
 
                 if ( node_route == nullptr ) return nullptr;
@@ -380,7 +384,7 @@ public:
                     //NodeT* node_from_new = graph->atRow( node_route->at(node_route->size()-1) );
 
                     std::vector< AlongNodes* >& new_routes
-                        = Route::findRoutesToFrom( node_to_new, node_from_new, graph );
+                        = Route::findRoutesToFrom( node_to_new, node_to_new, graph );
 
                     if ( new_routes.size() == 1 ) continue;
 
@@ -486,7 +490,7 @@ public:
     using variate_table_t::at;
 
     /// @brief The type of unbalanced trees with nodes in this `GraphTable< GT, NodeT, EdgeT, num >`
-    typedef typename Tree< NodeT, NodeT > tree_t;
+    typedef Tree< NodeT, NodeT > tree_t;
 
     /// @brief Copy constructor
     /// @param custom_graph Your custom graph that thus needs to be inherited from `passenger::Graph< NodeT >`
@@ -526,7 +530,7 @@ public:
                 ; inIt != incoming.end(); ++inIt
             ) {
                 node_start = inIt->second;
-                outgoing = this->make_outgoingmap( node_start );
+                OutgoingMap& outgoing = this->make_outgoingmap( node_start );
                 
                 for ( typename OutgoingMap::iterator outIt = outgoing.start()
                     ; outIt != outgoing.end(); ++outIt
@@ -549,7 +553,7 @@ public:
 
         OutgoingMap& outgoings_start = this->make_outgoingmap( node_from );
         typename OutgoingMap::iterator nodes_start_it = outgoings_start.begin();
-        NodeT* node_current; = nodes_start_it->second;
+        NodeT* node_current = nodes_start_it->second;
 
         tree_t* tree = new tree_t( node_from );
         if ( node_current == node_to ) return *tree;
@@ -567,8 +571,10 @@ public:
 
                 if ( (*node_route)[node_route->size()-1] == node_current ) is_route = true;
 
-                if ( ! is_route )
+                if ( ! is_route ) {
                     tree_t& tree_new = this->make_tree_from_to( node_current, in_end_it->second );
+
+                    tree.add( node_current, tree_new );
                 } else {
                     typename tree_t::node_t* current_tree_node = tree.find( (*node_route)[0] );
 
@@ -591,8 +597,6 @@ public:
                 }
 
                 if ( ! has_leaf_to_node_to ) continue;
-
-                tree.add( node_current, tree_new );
 
                 if ( in_end_it == incoming.node_end ) break;
             }
@@ -660,6 +664,7 @@ public:
     node_route_t* make_route_along_nodes( const NodeT* start_node, const NodeT* end_node, bool shortest = false ) {
         node_route_t* node_route = new node_route_t();
 
+        tree_t& tree;
         if ( shortest )
             tree_t& tree = this->make_complete_tree_from_to( start_node, end_node );
         else
@@ -670,7 +675,7 @@ public:
         unsigned int shortest_v = 0;
         unsigned int il = 0;
         typename tree_t::leaf_t& leaf;
-        for ( leaf : tree.leafs ) {
+        for ( typename tree_t::leaf_t& leaf : tree.leafs ) {
             const unsigned int depth_to_leaf = tree.depthTo( leaf );
             if ( shortest_v == 0 || depth_to_leaf < shortest_il ) {
                 shortest_il = il;
@@ -686,6 +691,7 @@ public:
             node_route.push_back( node );
             node = node.parent;
         }
+
         node_route.push_back( tree.root );
 
         return node_route;
@@ -699,7 +705,7 @@ public:
     /// @return A `edge_route_t`, which thus means a pointer to `AlongEdges` with the selected route. If
     ///         `shortest == true`, the shortest route is returned
     edge_route_t* make_route_along_edges( const NodeT* start_node, const NodeT* end_node, bool shortest = false ) {
-        node_route_t* node_route = this->make_route_along_nodes( start_nodee, end_node, shortest );
+        node_route_t* node_route = this->make_route_along_nodes( start_node, end_node, shortest );
 
         return Route::alongNodesToAlongEdges( node_route );
     }

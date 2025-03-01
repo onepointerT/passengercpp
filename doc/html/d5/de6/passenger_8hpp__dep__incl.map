@@ -1,4 +1,8 @@
 <map id="/home/yannika/devel/dcgpai/lib/passengercpp/src/passenger.hpp" name="/home/yannika/devel/dcgpai/lib/passengercpp/src/passenger.hpp">
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 <area shape="rect" id="Node000001" title=" " alt="" coords="220,5,385,58"/>
 <area shape="rect" id="Node000002" href="$d3/df4/edge_8cpp.html" title=" " alt="" coords="5,207,171,259"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,44,173,52,141,65,113,84,90,107,80,131,76,157,83,206,77,207,71,157,74,129,86,105,110,79,139,61,171,47,204,39"/>
@@ -14,4 +18,26 @@
 <area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="227,166,273,204,270,208,224,171"/>
 <area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="281,160,435,205,433,210,279,165"/>
 <area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="382,171,336,208,332,204,378,166"/>
+<<<<<<< Updated upstream
+=======
+=======
+<area shape="rect" id="Node000001" title=" " alt="" coords="229,5,395,58"/>
+<area shape="rect" id="Node000002" href="$d3/df4/edge_8cpp.html" title=" " alt="" coords="5,207,171,259"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,69,207,108,154,160,111,208,107,204,150,156,204,104,257,64"/>
+<area shape="rect" id="Node000003" href="$d4/ddf/edge_8hpp.html" title=" " alt="" coords="229,106,395,159"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="315,73,315,106,309,106,309,73"/>
+<area shape="rect" id="Node000004" href="$d7/d75/graph_8cpp.html" title=" " alt="" coords="384,207,549,259"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="367,65,409,104,441,156,461,205,456,207,436,159,405,108,364,69"/>
+<area shape="rect" id="Node000005" href="$dc/dc7/passenger_8cpp.html" title=" " alt="" coords="195,207,360,259"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="252,69,234,87,220,107,213,132,220,158,233,183,251,204,247,208,229,186,215,160,208,132,215,105,230,83,248,66"/>
+<area shape="rect" id="Node000006" href="$d9/de9/graph_8hpp.html" title=" " alt="" coords="469,106,635,159"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="390,62,490,103,488,108,388,67"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="241,168,147,209,145,204,239,163"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="366,165,428,204,425,209,364,170"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="300,174,289,207,284,205,295,172"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="522,172,491,208,487,204,518,169"/>
+<area shape="rect" id="Node000007" href="$d5/d94/graph__connection__table_8hpp.html" title=" " alt="" coords="574,207,783,259"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="598,166,647,204,644,208,595,170"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 </map>

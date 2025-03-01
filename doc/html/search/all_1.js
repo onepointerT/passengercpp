@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['begin_0',['begin',['../df/d4a/classNumberEnumeration.html#a7cf11713ede44b7e44176fac325f4742',1,'NumberEnumeration']]]
+  ['begin_0',['begin',['../d9/da3/classpassenger_1_1NumberEnumeration.html#a55a6af57a377eb96390367a3dd03a3f0',1,'passenger::NumberEnumeration']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vector_5ft_0',['vector_t',['../df/d4a/classNumberEnumeration.html#a1785ec89ff5bb197f819c9ef5672d609',1,'NumberEnumeration']]]
+  ['leaf_5fiterator_0',['leaf_iterator',['../d7/d8f/classpassenger_1_1Tree.html#ab2a4868f316d01ab4350aab3e6c6112a',1,'passenger::Tree']]],
+  ['leaf_5ft_1',['leaf_t',['../d7/d8f/classpassenger_1_1Tree.html#abf79f3217323d2c3c5bc65938a2e6e04',1,'passenger::Tree']]]
 ];

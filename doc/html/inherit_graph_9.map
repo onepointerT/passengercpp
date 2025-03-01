@@ -1,4 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 <area shape="rect" id="Node000000" title=" " alt="" coords="5,103,88,128"/>
 <area shape="rect" id="Node000001" href="$df/d4a/classNumberEnumeration.html" title=" " alt="" coords="136,5,284,44"/>
 <area shape="poly" id="edge21_Node000000_Node000001" title=" " alt="" coords="75,92,134,53,156,42,159,47,137,58,78,96"/>
@@ -8,4 +12,10 @@
 <area shape="poly" id="edge23_Node000000_Node000003" title=" " alt="" coords="103,122,151,131,150,136,102,128"/>
 <area shape="rect" id="Node000004" href="$df/d4a/classNumberEnumeration.html" title="A simple number enumeration that keeps track of ranges of member marker&#39;s enumerata number so that th..." alt="" coords="136,180,284,219"/>
 <area shape="poly" id="edge24_Node000000_Node000004" title=" " alt="" coords="82,134,137,165,162,177,160,182,134,170,79,138"/>
+<<<<<<< Updated upstream
+=======
+=======
+<area shape="rect" id="Node000000" href="$da/d69/classpassenger_1_1Range.html" title="A numeric range with a templated numeric type." alt="" coords="5,5,181,30"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 </map>

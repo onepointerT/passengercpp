@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">passengercpp<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">passengercpp<span id="projectnumber">&#160;0.2.1</span>
    </div>
    <div id="projectbrief">A library that is havening a passenger arriving and departing node graph with and without actions on edges</div>
   </td>
@@ -100,25 +100,29 @@ $(function(){initNavTree('d3/df4/edge_8cpp_source.html','../../'); initResizable
   <div class="headertitle"><div class="title">edge.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d3/df4/edge_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="../../d3/df4/edge_8cpp.html#a8bb1ef53467e4f61410d12822d922498">    1</a></span> </div>
+<a href="../../d3/df4/edge_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="../../de/d12/namespacepassenger.html#a95e4e7bb907b8106905d71f4c8fba257">    1</a></span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/ddf/edge_8hpp.html">edge.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d16/action_8hpp.html">action.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/dd8/passenger_8hpp.html">passenger.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><a class="code hl_class" href="../../db/d09/classAction.html">Action&lt;&gt;</a>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><a class="code hl_class" href="../../d9/dbb/classEdgeSimple.html">EdgeSimple&lt;&gt;</a>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><a class="code hl_class" href="../../d8/d8c/classEdge.html">Edge&lt; GraphPassenger, Action&lt;&gt;</a> &gt;;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><a class="code hl_class" href="../../d7/d30/classEdgeToNode.html">EdgeToNode&lt; GraphPassenger, Action&lt;&gt;</a>, <a class="code hl_class" href="../../dc/deb/classNodeNumbered.html">NodeNumbered&lt;&gt;</a> &gt;;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><a class="code hl_class" href="../../d7/d30/classEdgeToNode.html">EdgeToNode&lt; GraphPassengerNumber&lt;&gt;</a>, <a class="code hl_class" href="../../db/d09/classAction.html">Action&lt;&gt;</a>, <a class="code hl_class" href="../../dc/deb/classNodeNumbered.html">NodeNumbered&lt;&gt;</a> &gt;;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../de/d12/namespacepassenger.html">passenger</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><a class="code hl_class" href="../../da/db1/classpassenger_1_1Action.html">Action&lt;&gt;</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><a class="code hl_class" href="../../da/da5/classpassenger_1_1EdgeSimple.html">EdgeSimple&lt;&gt;</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><a class="code hl_class" href="../../d5/d88/classpassenger_1_1Edge.html">Edge&lt; GraphPassenger, Action&lt;&gt;</a> &gt;;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><a class="code hl_class" href="../../d9/de1/classpassenger_1_1EdgeToNode.html">EdgeToNode&lt; GraphPassenger, Action&lt;&gt;</a>, <a class="code hl_class" href="../../d7/d84/classpassenger_1_1NodeNumbered.html">NodeNumbered&lt;&gt;</a> &gt;;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><a class="code hl_class" href="../../d9/de1/classpassenger_1_1EdgeToNode.html">EdgeToNode&lt; GraphPassengerNumber&lt;&gt;</a>, <a class="code hl_class" href="../../da/db1/classpassenger_1_1Action.html">Action&lt;&gt;</a>, <a class="code hl_class" href="../../d7/d84/classpassenger_1_1NodeNumbered.html">NodeNumbered&lt;&gt;</a> &gt;;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>} <span class="comment">// namespace passenger</span></div>
 <div class="ttc" id="aaction_8hpp_html"><div class="ttname"><a href="../../d9/d16/action_8hpp.html">action.hpp</a></div></div>
-<div class="ttc" id="aclassAction_html"><div class="ttname"><a href="../../db/d09/classAction.html">Action</a></div><div class="ttdoc">An action that can be performed and where named functionals can be absolved.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d16/action_8hpp_source.html#l00066">action.hpp:66</a></div></div>
-<div class="ttc" id="aclassEdgeSimple_html"><div class="ttname"><a href="../../d9/dbb/classEdgeSimple.html">EdgeSimple</a></div><div class="ttdoc">A simple edge with all basic elements so that it can be inherited from.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/ddf/edge_8hpp_source.html#l00011">edge.hpp:11</a></div></div>
-<div class="ttc" id="aclassEdgeToNode_html"><div class="ttname"><a href="../../d7/d30/classEdgeToNode.html">EdgeToNode</a></div><div class="ttdoc">A inheriting class of of Edge that also contains a NodeT where it is directing to....</div><div class="ttdef"><b>Definition</b> <a href="../../d4/ddf/edge_8hpp_source.html#l00075">edge.hpp:77</a></div></div>
-<div class="ttc" id="aclassEdge_html"><div class="ttname"><a href="../../d8/d8c/classEdge.html">Edge</a></div><div class="ttdoc">A normal edge with an action. A specialization of EdgeSimple&lt; GraphPassengerT &gt;</div><div class="ttdef"><b>Definition</b> <a href="../../d4/ddf/edge_8hpp_source.html#l00035">edge.hpp:37</a></div></div>
-<div class="ttc" id="aclassNodeNumbered_html"><div class="ttname"><a href="../../dc/deb/classNodeNumbered.html">NodeNumbered</a></div><div class="ttdoc">A numbered and controlled node, inheriting Node&lt; GraphPassengerT &gt; and PassengerNumber&lt; num &gt;.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd8/passenger_8hpp_source.html#l00258">passenger.hpp:261</a></div></div>
+<div class="ttc" id="aclasspassenger_1_1Action_html"><div class="ttname"><a href="../../da/db1/classpassenger_1_1Action.html">passenger::Action</a></div><div class="ttdoc">An action that can be performed and where named functionals can be absolved.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d16/action_8hpp_source.html#l00067">action.hpp:67</a></div></div>
+<div class="ttc" id="aclasspassenger_1_1EdgeSimple_html"><div class="ttname"><a href="../../da/da5/classpassenger_1_1EdgeSimple.html">passenger::EdgeSimple</a></div><div class="ttdoc">A simple edge with all basic elements so that it can be inherited from.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/ddf/edge_8hpp_source.html#l00012">edge.hpp:12</a></div></div>
+<div class="ttc" id="aclasspassenger_1_1EdgeToNode_html"><div class="ttname"><a href="../../d9/de1/classpassenger_1_1EdgeToNode.html">passenger::EdgeToNode</a></div><div class="ttdoc">A inheriting class of of Edge that also contains a NodeT where it is directing to....</div><div class="ttdef"><b>Definition</b> <a href="../../d4/ddf/edge_8hpp_source.html#l00076">edge.hpp:78</a></div></div>
+<div class="ttc" id="aclasspassenger_1_1Edge_html"><div class="ttname"><a href="../../d5/d88/classpassenger_1_1Edge.html">passenger::Edge</a></div><div class="ttdoc">A normal edge with an action. A specialization of EdgeSimple&lt; GraphPassengerT &gt;</div><div class="ttdef"><b>Definition</b> <a href="../../d4/ddf/edge_8hpp_source.html#l00036">edge.hpp:38</a></div></div>
+<div class="ttc" id="aclasspassenger_1_1NodeNumbered_html"><div class="ttname"><a href="../../d7/d84/classpassenger_1_1NodeNumbered.html">passenger::NodeNumbered</a></div><div class="ttdoc">A numbered and controlled node, inheriting Node&lt; GraphPassengerT &gt; and PassengerNumber&lt; num &gt;.</div><div class="ttdef"><b>Definition</b> <a href="../../d4/dd8/passenger_8hpp_source.html#l00273">passenger.hpp:276</a></div></div>
 <div class="ttc" id="aedge_8hpp_html"><div class="ttname"><a href="../../d4/ddf/edge_8hpp.html">edge.hpp</a></div></div>
+<div class="ttc" id="anamespacepassenger_html"><div class="ttname"><a href="../../de/d12/namespacepassenger.html">passenger</a></div><div class="ttdef"><b>Definition</b> <a href="../../d1/d83/action_8cpp_source.html#l00007">action.cpp:7</a></div></div>
 <div class="ttc" id="apassenger_8hpp_html"><div class="ttname"><a href="../../d4/dd8/passenger_8hpp.html">passenger.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
